@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блок преимуществ</title>
     <style>
-        html, body{margin:0;padding:0;}
         .main {
         margin:0 auto; /* Центрируем блоки */
         width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
-        max-width:700px; /* Устанавливаем максимальную ширину */
+        max-width:800px; /* Устанавливаем максимальную ширину */
         }
         .inline div{
         display:inline-block; /* Делаем блоки по горизонтали */
@@ -23,20 +22,22 @@
         
         }
         div.inline{font-size:0;} /* Ставим родителю значение 0, чтобы убрать отступы у блоков*/
-        .left-block{
-        background:red;
-        width:20%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
-        height:300px; /* Высота блока */
+        .col-1{
+        background: palegreen;
+        width:25%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
+        height:150px; /* Высота блока */
         }
-        .content{
-        background:green;
-        width:60%;
-        height:300px;
+        .col-2{
+        width:25%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
+        height:150px; /* Высота блока */
         }
-        .right-block{
-        background:blue;
-        width:20%;
-        height:300px;
+        .col-3{
+        width:25%;
+        height:150px;
+        }
+        .col-4{
+        width:25%;
+        height:150px;
         }
 
         @media (max-width:600px){
@@ -45,14 +46,38 @@
         width:100%; /* Задаем на всю ширину экрана */
         height:100px;
         }
-    }
+        }
+
+        h3 { 
+        text-align: center 
+        }
+
+        img.arguments {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
     </style>
 </head>
 <body>
     <div class="main inline">
-        <div class="left-block">left</div>
-        <div class="content">content</div>
-        <div class="right-block">right</div>
+        <div class="col-1">
+            <img class="arguments" src="/images/argument1.png" alt="первая причина - это you">
+            <h3>Большой ассортимент</h3>
+        </div>
+        <div class="col-2">
+            <img class="arguments" src="/images/argument2.png" alt="а вторая - все твои dreams">
+            <h3>Низкие цены</h3>
+        </div>
+        <div class="col-3">
+            <img class="arguments" src="/images/argument3.png" alt="третья причина - это все твои words">
+            <h3>Гарантия качества</h3>
+        </div>
+        <div class="col-4">
+            <img class="arguments" src="/images/argument4.png" alt="четвертая причина - это false">
+            <h3>Быстрая доставка</h3>
+        </div>
     </div>
 </body>
 </html>
