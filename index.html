@@ -6,13 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блок преимуществ</title>
     <style>
-       * {
-            margin: 0;
-            padding: 0;
+        html, body{margin:0;padding:0;}
+        .main {
+        margin:0 auto; /* Центрируем блоки */
+        width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
+        max-width:700px; /* Устанавливаем максимальную ширину */
         }
+        .inline div{
+        display:inline-block; /* Делаем блоки по горизонтали */
+        display: -moz-inline-stack; /* Для FireFox 2, тот же самый, что и inline-block */
+        vertical-align:top; /* Выравниваем их сверху */
+        font-size:16px; /* Ставим дочкам размер шрифта, иначе примет значение родителя */
+        /* Для IE 6 и IE 7 чтобы блоки были по горизонтали*/
+        zoom: 1;
+        *display: inline;
+        
+        }
+        div.inline{font-size:0;} /* Ставим родителю значение 0, чтобы убрать отступы у блоков*/
+        .left-block{
+        background:red;
+        width:20%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
+        height:300px; /* Высота блока */
+        }
+        .content{
+        background:green;
+        width:60%;
+        height:300px;
+        }
+        .right-block{
+        background:blue;
+        width:20%;
+        height:300px;
+        }
+
+        @media (max-width:600px){
+        .inline div{
+        display:block; /* Делаем блоки “Блочными”, т.е. друг под другом */
+        width:100%; /* Задаем на всю ширину экрана */
+        height:100px;
+        }
+    }
     </style>
 </head>
 <body>
-<script src="script.js"></script>
+    <div class="main inline">
+        <div class="left-block">left</div>
+        <div class="content">content</div>
+        <div class="right-block">right</div>
+    </div>
 </body>
 </html>
