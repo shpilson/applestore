@@ -1,9 +1,8 @@
-.main {
+    .advantage {
     margin:0 auto; /* Центрируем блоки */
     width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
-    max-width:780px; /* Устанавливаем максимальную ширину */
     }
-    .inline div{
+    .inline > div{
     display:inline-block; /* Делаем блоки по горизонтали */
     display: -moz-inline-stack; /* Для FireFox 2, тот же самый, что и inline-block */
     vertical-align:top; /* Выравниваем их сверху */
