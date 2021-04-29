@@ -73,4 +73,5 @@ body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu
     font-weight: 600;
     color: white;
     text-align: right;
+    border: none !important;
 }
