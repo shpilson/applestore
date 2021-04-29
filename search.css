@@ -364,3 +364,10 @@ body.theme_11.product-product .product-single.product-item #tab-description, bod
     border-top: none !important;
     padding: 20px 0;
 }
+
+/* Карточка товара: делаем фото меньше */
+
+.product-product .product-single>div:first-child {
+    padding: 25px;
+}
+
