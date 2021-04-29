@@ -68,3 +68,9 @@ body.theme_11.ltr
 body.theme-green-1.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul, body.theme-green-1.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul div, body.theme-green-1.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul li {
     background-color: #000000;
 }
+
+body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul>li>a, body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li[data-nav-part=home]:hover>ul>li>a {
+    font-weight: 600;
+    color: white;
+    text-align: right;
+}
