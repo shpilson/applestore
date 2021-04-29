@@ -388,6 +388,13 @@ body .footer .footer-widgets {
     background-color: transparent;
 }
 
+body .footer .footer-meta {
+    padding: 30px 0;
+    background-color: black;
+    border-top: none !important;
+    position: relative;
+}
+
 /* Отображаем футер на всех страницах */
 
 body.theme_11:not(.common-home) footer.footer .footer-widgets>.container {
