@@ -396,3 +396,9 @@ body.theme_11:not(.common-home) footer.footer .footer-widgets>.container {
     padding: 0 15px;
     overflow: visible;
 }
+
+/* Граница футера */
+
+body.theme_11 .wrapper footer.footer {
+    border-top: 10px solid #00b16a;
+}
