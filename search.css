@@ -357,8 +357,10 @@ body.ltr .wrapper .homefeatured_category > div > div > div {
   }
 }
 
+/* Карточка товара: убираем границы */
 
 
-
-
-
+body.theme_11.product-product .product-single.product-item #tab-description, body.theme_11.product-product .product-single.product-item #tab-description~.table_holder {
+    border-top: none !important;
+    padding: 20px 0;
+}
