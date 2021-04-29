@@ -372,7 +372,3 @@ body.theme_11.product-product .product-single.product-item #tab-description, bod
 }
 
 /* Тень при наведении на товар */
-.product-single .product_slide:hover {
--webkit-box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.3);
-box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.3);
-}
