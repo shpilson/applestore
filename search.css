@@ -388,5 +388,11 @@ body .footer .footer-widgets {
     background-color: transparent;
 }
 
+/* Отображаем футер на всех страницах */
 
-  
+body.theme_11:not(.common-home) footer.footer .footer-widgets>.container {
+    height: 100% !important;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: visible;
+}
