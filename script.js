@@ -22,3 +22,7 @@ advantage.insertAdjacentHTML('afterbegin', `<div class="container">
 </div>
 </div>`)
 
+
+const catalogue = document.querySelector('.custom_banner');
+
+catalogue.insertAdjacentHTML('afterbegin', `<h2 class="section-title mb-4 mt-4">Категории товаров</h2>`)
