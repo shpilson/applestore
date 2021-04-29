@@ -129,8 +129,9 @@ body.theme_11
   .caption-wrapper
   .caption-inner
   h2.caption-title {
-  min-height: 10px !important;
-  background: none !important;
+
+    background: rgb(241, 241, 241) !important;
+    border-radius: 5px 5px 35px 35px;
 }
 
 body.theme_11
