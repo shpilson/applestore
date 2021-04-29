@@ -1,0 +1,60 @@
+.add_to_cart button span {
+    text-transform: capitalize !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+  }
+  
+  body.wide.ltr
+    .wrapper
+    .page-section
+    .products.grid
+    .product-item
+    .thumbnail
+    .price_actions
+    .add_to_cart
+    > button,
+  body.wide.ltr
+    .wrapper
+    .page-section
+    .products.grid
+    .product-item
+    .thumbnail
+    .price_actions
+    .more_details_btn_wrapper
+    > button {
+    background: transparent !important;
+    color: var(--color-custom-theme) !important;
+    border: 1px solid var(--color-custom-theme);
+    border-radius: var(--btn-border-radius);
+    -webkit-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+  
+  body.wide.ltr
+    .wrapper
+    .page-section
+    .products.grid
+    .product-item
+    .thumbnail
+    .price_actions
+    .add_to_cart
+    > button:hover,
+  .thumbnail .add_to_wishlist button:hover, .thumbnail .remove_from_wishlist button:hover {
+    background: var(--btn-hover) !important;
+    color: white !important;
+  }
+  
+  body.wide.ltr
+    .wrapper
+    .page-section
+    .products.grid
+    .product-item
+    .thumbnail
+    .price_actions
+    .add_to_cart
+    > button:active,
+    .thumbnail .add_to_wishlist button:active, .thumbnail .remove_from_wishlist button:active {
+    background: var(--btn-active) !important;
+    color: white !important;
+  }

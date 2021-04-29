@@ -1,0 +1,5 @@
+body .wrapper .page-section .products.grid .product-item .thumbnail .price_actions.upper_price_actions {
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    margin-top: 20px !important;
+  }
