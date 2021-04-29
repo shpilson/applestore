@@ -408,4 +408,5 @@ body.theme_11 .wrapper footer.footer {
 body.ru.ltr .wrapper .homefeatured_category > div > h2 {
     position: relative;
     display: inline-block;
+    text-align: center !important;
 }
