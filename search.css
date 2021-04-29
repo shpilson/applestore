@@ -24,11 +24,7 @@ body.theme_11 .wrapper .top-bar {
 .wrapper .header .header-wrapper .header_widgets .header_login {
     padding: 0 20px !important;
   }
-  
-  body.theme_11 .wrapper .header .header-wrapper .header_widgets .header-cart .cart-wrapper #cart, body.theme_11 .wrapper .header .header-wrapper .header_widgets .header-cart .cart-wrapper #wishlist {
-    color: black !important;
-  }
-  
+   
   .header_login > .d-none.d-lg-block {
     display: none !important;
   }
