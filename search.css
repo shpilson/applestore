@@ -19,3 +19,65 @@ body.theme_11 .wrapper .header .header-wrapper .header-search input {
 body.theme_11 .wrapper .top-bar {
     background-color: #000000;
 }
+
+/* Отображаем иконку авторизации */
+.wrapper .header .header-wrapper .header_widgets .header_login {
+    padding: 0 20px !important;
+  }
+  
+  body.theme_11 .wrapper .header .header-wrapper .header_widgets .header-cart .cart-wrapper #cart, body.theme_11 .wrapper .header .header-wrapper .header_widgets .header-cart .cart-wrapper #wishlist {
+    color: black !important;
+  }
+  
+  .header_login > .d-none.d-lg-block {
+    display: none !important;
+  }
+  
+  .header_login > .d-none.d-sm-block.d-lg-none {
+    display: block !important;
+  }
+
+  .wrapper .header .header-wrapper .header_widgets {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+  
+  body
+    > div
+    > header
+    > div.header-wrapper
+    > div.container-fluid
+    > div.header_widgets
+    > div.header_login
+    > a.d-none.d-lg-block {
+    display: none !important;
+  }
+  
+  body
+    > div
+    > header
+    > div.header-wrapper
+    > div.container-fluid
+    > div.header_widgets
+    > div.header_login
+    > a.d-none.d-sm-block.d-lg-none {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  @media (max-width: 991px) {
+    .wrapper .header .header-wrapper .header_widgets {
+      position: absolute !important;
+    }
+  }
+  
