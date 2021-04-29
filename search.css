@@ -14,3 +14,8 @@ body.theme-green-1 .header .navigation-wrapper {
 body.theme_11 .wrapper .header .header-wrapper .header-search input {
     border-radius: 30px;
 }
+
+/* Верхняя навигация. Меняем фон */
+body.theme_11 .wrapper .top-bar {
+    background-color: #000000;
+}
