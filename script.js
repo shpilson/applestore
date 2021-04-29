@@ -2,7 +2,7 @@ const advantage = document.querySelector('.custom_section');
 
 advantage.insertAdjacentHTML('afterbegin', `<div class="container">
 <div class="row">
-<h2 class="section-title mb-4 mt-4 w-100"><span>Наши премущества</span></h2>
+<h2 class="section-title mb-4 mt-4 w-100"><span>Наши преимущества</span></h2>
 <div class="col-md-3 col-6 text-center">
     <img class="arguments" src="https://github.com/shpilson/applestore/blob/master/images/argument1.png?raw=true" alt="первая причина - это you">
     <h6>Многообразие</h6>
