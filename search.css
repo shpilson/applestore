@@ -1,4 +1,5 @@
 /* Header: убираем границы, делаем тень */
+
 body.theme-green-1.theme_11 .wrapper .header .header-wrapper .header-search input.form-control {
   border-color: #0000;
   -webkit-box-shadow: inset 0px 1px 6px rgb(151 150 150 / 39%) !important;
@@ -6,21 +7,25 @@ body.theme-green-1.theme_11 .wrapper .header .header-wrapper .header-search inpu
 }
 
 /* Убираем границу перед навигацией */
+
 body.theme-green-1 .header .navigation-wrapper {
     border-top: none;
 }
 
 /* Скругляем углы у поиска */
+
 body.theme_11 .wrapper .header .header-wrapper .header-search input {
     border-radius: 30px;
 }
 
 /* Верхняя навигация. Меняем фон */
+
 body.theme_11 .wrapper .top-bar {
     background-color: #000000;
 }
 
 /* Отображаем иконку авторизации */
+
 .wrapper .header .header-wrapper .header_widgets .header_login {
     padding: 0 20px !important;
   }
@@ -34,6 +39,7 @@ body.theme_11 .wrapper .top-bar {
   }
 
 /* Навигация: убираем границы, чёрный фон */
+
   .header .nav.sf-menu li a small,
 .navigation li a small {
   display: none;
@@ -57,4 +63,8 @@ body.theme_11.ltr
   > li[data-nav-part='home']
   > a {
   border: none !important;
+}
+
+body.theme-green-1.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul, body.theme-green-1.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul div, body.theme-green-1.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>ul li {
+    background-color: #000000;
 }
