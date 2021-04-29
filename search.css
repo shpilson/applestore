@@ -402,3 +402,10 @@ body.theme_11:not(.common-home) footer.footer .footer-widgets>.container {
 body.theme_11 .wrapper footer.footer {
     border-top: 10px solid #00b16a;
 }
+
+/* Текст "Категория товаров" - выравниванием по середине */
+
+body.ru.ltr .wrapper .homefeatured_category > div > h2 {
+    position: relative;
+    display: inline-block;
+}
