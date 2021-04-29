@@ -321,6 +321,7 @@ body.ltr .wrapper .homefeatured_category > div > div > div {
     text-transform: capitalize;
     font-weight: bold;
     color: #000;
+    margin: 0px auto;
   }
 
   body.ru.ltr
