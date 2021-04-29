@@ -32,3 +32,29 @@ body.theme_11 .wrapper .top-bar {
   .header_login > .d-none.d-sm-block.d-lg-none {
     display: block !important;
   }
+
+/* Навигация: убираем границы, чёрный фон */
+  .header .nav.sf-menu li a small,
+.navigation li a small {
+  display: none;
+}
+
+body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li.flexy:hover>a:before, body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu>li[data-nav-part=home]:hover>a:before {
+  top: 100% !important;
+}
+
+body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu > li.flexy:hover, body.theme_11 .wrapper .header .navigation-wrapper nav.navigation ul.nav.sf-menu > li[data-nav-part='home']:hover {
+  background: transparent !important;
+}
+
+body.theme_11.ltr .wrapper .header nav.navigation ul.nav.sf-menu > li.flexy > a,
+body.theme_11.ltr
+  .wrapper
+  .header
+  .navigation-wrapper
+  nav.navigation
+  ul.nav.sf-menu
+  > li[data-nav-part='home']
+  > a {
+  border: none !important;
+}
