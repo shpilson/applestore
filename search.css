@@ -371,4 +371,18 @@ body.theme_11.product-product .product-single.product-item #tab-description, bod
     padding: 25px;
 }
 
-/* Тень при наведении на товар */
+/* Цвет футера и отсупы */
+
+body.theme_11 .wrapper footer.footer .footer-widgets {
+    background-color: #000000;
+}
+
+body.theme_11 .wrapper footer.footer .footer-widgets .widget-categories ul li a, body.theme_11 .wrapper footer.footer .footer-widgets .widget .widget-title {
+    color: #00b16a;
+}
+
+body .footer .footer-widgets {
+    padding: 20px 0;
+    margin-top: 0;
+    background-color: transparent;
+}
