@@ -410,8 +410,8 @@ body.theme_11 .wrapper footer.footer {
     border-top: 10px solid #00b16a;
 }
 
-#home > body .content-area {
-    padding-bottom: 0px !important;
+ body .content-area {
+    padding-bottom: 10px !important;
 }
 
 /* Текст "Категория товаров" - выравниванием по середине */
