@@ -437,7 +437,7 @@ body.theme_11.product-product .product-single.product-item .buttons .btn-wish-li
 
 /* Карта: затемнение при наведении */
 
-#home > div > div.content-area > div.mymap_section > iframe:active {
+#home > div > div.content-area > div.mymap_section > iframe:hover {
 
 filter: grayscale(.7);
 transition: all .3s ease;
