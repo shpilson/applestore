@@ -434,3 +434,12 @@ body.theme_11.product-product .product-single.product-item .buttons #button-book
 body.theme_11.product-product .product-single.product-item .buttons .btn-wish-list {
     border-radius: 4px;
 }
+
+/* Карта: затемнение при наведении */
+
+#home > div > div.content-area > div.mymap_section > iframe:hover {
+
+filter: grayscale(.7);
+transition: all .3s ease;
+
+}
