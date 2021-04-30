@@ -439,7 +439,7 @@ body.theme_11.product-product .product-single.product-item .buttons .btn-wish-li
 
 #home > div > div.content-area > div.mymap_section > iframe:hover {
 
-filter: grayscale(.1);
+filter: none !important;
 transition: all .3s ease;
 
 }
