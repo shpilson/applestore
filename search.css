@@ -417,3 +417,10 @@ body.ru.ltr .wrapper .homefeatured_category > div > h2 {
     display: inline-block;
     text-align: center !important;
 }
+
+
+/* Блок контактов: меняем цвет ссылок */
+
+body a {
+    color: #ffffff;
+}
