@@ -410,7 +410,7 @@ body.theme_11 .wrapper footer.footer {
     border-top: 10px solid #00b16a;
 }
 
-body .content-area {
+#home > body .content-area {
     padding-bottom: 0px !important;
 }
 
