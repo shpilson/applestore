@@ -14,7 +14,7 @@ const pages = {
 
 // Get the modal
 var modal = document.getElementById("myModal");
-var showpopup = document.getElementById("myBtn");
+var showpopup = document.querySelector('.common-home');
 
 // Открываем окно по умолчанию
 if (document.querySelector('.common-home')) { 
