@@ -18,7 +18,10 @@ var modal = document.getElementById("myModal");
 // Открываем окно по умолчанию
 if (document.querySelector(main)) { 
     var delay_popup = 5000;
-    setTimeout("document.getElementById('myModal').style.display='block'", delay_popup);
+    btn.show = function() {
+        modal.style.display = "block";
+      }
+    setTimeout(btn.show, delay_popup);
  }
 
 
