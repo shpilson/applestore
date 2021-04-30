@@ -35,9 +35,32 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 
 <div class="container">
 <div class="contact-with-map row">
-<div class="contacts col-md-4 col-12">
+<div class="contact__map" style="
+    width: 100vw;
+    height: 350px;
+    margin-top: 80px;
+    position: relative;
+    padding: 50px 0;
+">
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48aa462ef9cd620ee89a27a1180cc6b90c4ccb638a222fa18e840e0c63a6f6a5&amp;source=constructor" width="auto" height="auto" frameborder="0" style="
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    "></iframe>
+</div><div class="col-12 col-md-4 contacts" style="
+    background:  black;
+    border-radius: 10px;
+    position: absolute;
+    padding: 5% 3%;
+    color: white;
+">
 <h5 class="contacts__title">Наши контакты</h5>
-<ul class="contacts__list">
+<ul class="contacts__list" style="
+    display: flex;
+    /* align-items: center; */
+">
   
 <li class="contact__list-el">
   <i>
@@ -78,8 +101,6 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 
 </ul>
 </div>
-<div class="contact__map">
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48aa462ef9cd620ee89a27a1180cc6b90c4ccb638a222fa18e840e0c63a6f6a5&amp;source=constructor" width="auto" height="auto" frameborder="0"></iframe>
-</div>
+
 </div>
 </div></div>`)
