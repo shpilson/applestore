@@ -16,9 +16,9 @@ const pages = {
 var modal = document.getElementById("myModal");
 
 // Открываем окно по умолчанию
-if (document.querySelector(main)) { 
+if (document.querySelector('.common-home')) { 
     var delay_popup = 5000;
-    btn.show = function() {
+    btn.onlick = function() {
         modal.style.display = "block";
       }
     setTimeout(btn.show, delay_popup);
