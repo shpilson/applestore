@@ -404,10 +404,14 @@ body.theme_11:not(.common-home) footer.footer .footer-widgets>.container {
     overflow: visible;
 }
 
-/* Граница футера */
+/* Граница футера, убираем отступ от карты */
 
 body.theme_11 .wrapper footer.footer {
     border-top: 10px solid #00b16a;
+}
+
+body .content-area {
+    padding-bottom: 0px !important;
 }
 
 /* Текст "Категория товаров" - выравниванием по середине */
