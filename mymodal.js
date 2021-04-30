@@ -1,5 +1,23 @@
+const pages = {
+    main: document.querySelector('.common-home'),
+    category: document.querySelector('.product-category'),
+    checkout: document.querySelector('.checkout-checkout'),
+    cart: document.querySelector('.checkout-cart'),
+    product: document.querySelector('.product-product'),
+    information: document.querySelector('.information-information'),
+    login: document.querySelector('.account-login'),
+    register: document.querySelector('.account-register'),
+    sitemap: document.querySelector('.information-sitemap'),
+    all: document.querySelector('.wrapper')
+  }
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
+
+// Get the modal INDEX.html
+var openhtml = document.querySelector('.common-home'),
+
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
