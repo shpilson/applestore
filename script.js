@@ -37,7 +37,7 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
     width: 100vw;
     height: 350px;
     margin-top: 80px;
-    position: relative;
+    position: absolute;
     padding: 50px 0;
 ">
 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48aa462ef9cd620ee89a27a1180cc6b90c4ccb638a222fa18e840e0c63a6f6a5&amp;source=constructor" width="auto" height="auto" frameborder="0" style="
@@ -72,7 +72,7 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 
 </i>
   <p class="contact__list-text">
-    <a href="" role="link">г. Подольск, Революционный проспект, д. 23</a>
+    <a href="" role="link">г. Москва, Петровка , д. 2</a>
   </p>
 </li>
 
@@ -97,7 +97,7 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 
 </i>
   <p class="contact__list-text">
-    <a href="tel:8 (968) 327-27-00" role="link">8 (968) 327-27-00</a>
+    <a href="tel:8 (999) 965-89-09" role="link">8 (999) 965-89-09</a>
   </p>
 </li>
 
