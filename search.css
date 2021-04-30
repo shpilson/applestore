@@ -439,6 +439,10 @@ body.theme_11.product-product .product-single.product-item .buttons .btn-wish-li
     border-radius: 4px;
 }
 
+body.theme_11.product-product .product-single.product-item .buttons .quantity {
+    border-radius: 4px;
+}
+
 /* Карта: затемнение при наведении */
 
 #home > div > div.content-area > div.mymap_section > iframe:hover {
