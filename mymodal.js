@@ -18,10 +18,10 @@ var modal = document.getElementById("myModal");
 // Открываем окно по умолчанию
 if (document.querySelector('.common-home')) { 
     var delay_popup = 5000;
-    btn.onclick = function() {
+    showpopup = function() {
         modal.style.display = "block";
       }
-    setTimeout(btn.onclick, delay_popup);
+    setTimeout(showpopup, delay_popup);
  }
 
 
