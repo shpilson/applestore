@@ -28,7 +28,7 @@ const catalogue = document.querySelector("#home > div > div.content-area > secti
 catalogue.insertAdjacentHTML('afterbegin', `<h2 class="section-title mb-4 mt-4 w-100"><span>Категории товаров</span></h2>`)
 
 
-const apple_map = document.querySelector("#home > div > div.content-area > div.custom_section > div.container")
+const apple_map = document.querySelector(".custom_section")
 
 apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 
