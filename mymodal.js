@@ -14,11 +14,11 @@ const pages = {
 
 // Get the modal
 var modal = document.getElementById("myModal");
-var showpopup = document.getElementById("myModal");
+var showpopup = document.getElementById("myBtn");
 
 // Открываем окно по умолчанию
 if (document.querySelector('.common-home')) { 
-    var delay_popup = 5000;
+    var delay_popup = 1000;
     showpopup = function() {
         modal.style.display = "block";
       }
