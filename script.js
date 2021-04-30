@@ -49,9 +49,10 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="heig
 ">
 <h5 class="contacts__title">Наши контакты</h5>
 <ul class="contacts__list" style="
-    /* display: flex; */
-    /* align-items: center; */
-">
+width: 80%;
+margin: 0 auto;
+/* display: flex; */
+/* align-items: center; */">
   
 <li class="contact__list-el">
   <i>
