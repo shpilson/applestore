@@ -32,7 +32,13 @@ const apple_map = document.querySelector("#home > div > div.content-area > div.c
 
 apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 
-
+<div class="contact__map">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48aa462ef9cd620ee89a27a1180cc6b90c4ccb638a222fa18e840e0c63a6f6a5&amp;source=constructor" width="auto" height="auto" frameborder="0" 
+    style="width: 100%;
+    height: 100%;
+    position: absolute;"></iframe>
+  </div>
+  
 <div class="container">
 <div class="contact-with-map row">
 <div class="contacts col-md-4 col-12">
@@ -77,9 +83,6 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section">
 </li>
 
 </ul>
-</div>
-<div class="contact__map">
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48aa462ef9cd620ee89a27a1180cc6b90c4ccb638a222fa18e840e0c63a6f6a5&amp;source=constructor" width="auto" height="auto" frameborder="0"></iframe>
 </div>
 </div>
 </div></div>`)
