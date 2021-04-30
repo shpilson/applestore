@@ -16,7 +16,7 @@ const pages = {
 var modal = document.getElementById("myModal");
 
 // Открываем окно по умолчанию
-if (document.querySelector('.common-home')) { 
+if (document.querySelector(main)) { 
     var modal = document.getElementById("myModal");
  }
 
