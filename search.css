@@ -443,6 +443,13 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity {
     border-radius: 4px;
 }
 
+/* Главная страница: скругляем кнопки */
+
+body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .add_to_cart .buttons_added.quantity, body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .more_details_btn_wrapper .buttons_added.quantity {
+    border-radius: 4px;
+}
+
+
 /* Карта: затемнение при наведении */
 
 #home > div > div.content-area > div.mymap_section > iframe:hover {
