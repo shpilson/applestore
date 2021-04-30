@@ -424,3 +424,13 @@ body.ru.ltr .wrapper .homefeatured_category > div > h2 {
 body a {
     color: #ffffff;
 }
+
+/* Страница товара: скругляем кнопки */
+
+body.theme_11.product-product .product-single.product-item .buttons #button-booking, body.theme_11.product-product .product-single.product-item .buttons #button-cart {
+    border-radius: 4px;
+}
+
+body.theme_11.product-product .product-single.product-item .buttons .btn-wish-list {
+    border-radius: 4px;
+}
