@@ -69,7 +69,7 @@ const apple_map = document.querySelector(".custom_section")
 
 apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="height: 100%;margin-top: 80px;position: relative;padding: 50px 0;width: 100%;">
 
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48aa462ef9cd620ee89a27a1180cc6b90c4ccb638a222fa18e840e0c63a6f6a5&amp;source=constructor" width="auto" height="auto" frameborder="0" style="
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A463eac9ab974902527947ad58129996e289d642018dbd623cf607d5c4dc7ef13&amp;source=constructor" width="auto" height="auto" frameborder="0" style="
     width: 100%;
     height: 100%;
     position: absolute;
@@ -85,10 +85,7 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="heig
     color: white;
 ">
 <h5 class="contacts__title">Наши контакты</h5>
-<ul class="contacts__list" style="
-    /* display: flex; */
-    /* align-items: center; */
-">
+<ul class="contacts__list">
   
 <li class="contact__list-el">
   <i>
