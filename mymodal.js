@@ -15,9 +15,10 @@ const pages = {
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the modal INDEX.html
-var openhtml = document.querySelector('.common-home'),
-
+// Открываем окно по умолчанию
+if (document.querySelector('.common-home')) { 
+    var modal = document.getElementById("myModal");
+ }
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
