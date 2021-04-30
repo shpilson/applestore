@@ -39,6 +39,7 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="heig
     top: 0;
     left: 0;
     filter: grayscale(.8);
+    transition: all .3s ease;
     "></iframe>
 
 <div class="container">
