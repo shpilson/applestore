@@ -119,17 +119,14 @@ myModal.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 <div class="modal-content">
   <div class="modal-header">
     <span class="close" id='close'>&times;</span>
-    <h3>Добро пожаловать на сайт!</h3>
+    <h4>Добро пожаловать на сайт!</h4>
   </div>
   <div class="modal-body">
-    <p>Этот шаблон создан с целью демострации возможностей платформы.</p>
-    <p>Хотите такой же сайт? Присоединяйтесь!</p>
+    <h6>Этот шаблон создан с целью демонстрации возможностей платформы.</h6>
   </div>
   <div class="modal-footer">
-    <h5><a href="https://www.sellavi.com/">www.sellavi.com</a></h5>
+    <a href="https://www.sellavi.com/"><img src="https://www.sellavi.com/assets/logo.svg"></a>
   </div>
 </div>
 
-</div>
-
-<script src="https://shpilson.github.io/applestore/mymodal.js"></script>`)
+</div>`)
