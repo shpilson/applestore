@@ -47,6 +47,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding: 10px 16px;
   background-color: #5cb85c;
   color: white;
+  justify-content: center;
 }
 
 .modal-body {padding: 2px 16px;}
@@ -60,7 +61,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .close {
 	color: rgb(255, 255, 255);
-	float: right;
+	float: right !important;
 	font-size: 30px;
 	font-weight: 700
 }

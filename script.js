@@ -119,14 +119,14 @@ myModal.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 <div class="modal-content">
   <div class="modal-header">
     <span class="close" id='close'>&times;</span>
-    <h2>Добро пожаловать на сайт!</h2>
+    <h3>Добро пожаловать на сайт!</h3>
   </div>
   <div class="modal-body">
     <p>Этот шаблон создан с целью демострации возможностей платформы.</p>
     <p>Хотите такой же сайт? Присоединяйтесь!</p>
   </div>
   <div class="modal-footer">
-    <h3><a href="https://www.sellavi.com/">www.sellavi.com</a></h3>
+    <h5><a href="https://www.sellavi.com/">www.sellavi.com</a></h5>
   </div>
 </div>
 
