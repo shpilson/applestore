@@ -20,7 +20,7 @@ sessionStorage.setItem('#modal','true');
 	}
 
 
-  const myModal = document.querySelector(".common_home")
+  const myModal = document.querySelector(".custom_section")
 
   myModal.insertAdjacentHTML('afterbegin', `<div id="modal" class="modal">
 
