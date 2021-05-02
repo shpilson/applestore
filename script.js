@@ -112,8 +112,8 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="heig
 </div></div>`)
 
 
-const myModal = document.querySelector(".header")
-myModal.insertAdjacentHTML('beforebegin', `<div id="modal" class="modal">
+const myModal = document.querySelector(".footer")
+myModal.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
