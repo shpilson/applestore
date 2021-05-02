@@ -21,4 +21,3 @@ if(sessionStorage.getItem('#modal') !== 'true'){
 // Для повторного показа окна, потребуется открыть новую вкладку и зайти на страницу повторно
 // sessionStorage.setItem('#modal','true');
 	}
-*/
