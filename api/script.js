@@ -9,12 +9,17 @@ let options = {
 
 let res;
 
-fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/categories", options)
+fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders/100/0", options)
     .then(res => res.json())
     .then(data => res = data)
     .then(data => {
     	for(let i in res.response){
-      	document.querySelector(".myItem").insertAdjacentHTML('beforeend', `<span>${res.response[i].full_name}</span>`)
+      	document.querySelector(".myItem").insertAdjacentHTML('beforeend', `Номер заказа: <span>${res.response[i].order_id}</span></br>
+ Статус заказа: <span>${res.response[i].status}</span></br>
+ Клиент: <span>${res.response[i].name}</span> </br>
+ Дата оформления заказа: <span>${res.response[i].date_added}</span> </br>
+ Товаров в корзине: <span>${res.response[i].products}</span></br>
+ Общая сумма: <span>${res.response[i].total}</span></br>`)
       }
     })
     .catch(err => console.log(err.message));
