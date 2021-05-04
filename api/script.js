@@ -9,7 +9,7 @@ let options = {
 
 let res;
 
-fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders/100/0", options)
+fetch("https://cors-anywhere.herokuapp.coms/https://ru.sellavi.com/gateway/orders/100/0", options)
     .then(res => res.json())
     .then(data => res = data)
     .then(data => {
