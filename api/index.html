@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://shpilson.github.io/applestore/api/script.js"></script>
+
+      <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://shpilson.github.io/applestore/api/css/bootstrap.min.css" >
+
     <title>API Sellavi</title>
 </head>
 <body>
@@ -13,5 +17,23 @@
      Список заказов:
      </p>
   </div>
+
+  <button type="button" class="btn btn-primary" data-toggle="popover" title="Сообщение" data-content="Ура, Bootstrap 4 работает">Поднеси ко мне курсор</button>
+
+  <!-- После подключения jQuery, Popper и Bootstrap JS -->
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover({trigger:'hover'});
+    });
+  </script>
+
+
+<!-- Подключаем jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Подключаем плагин Popper (необходим для работы компонента Dropdown и др.) -->
+   <script src="https://shpilson.github.io/applestore/api/js/popper.min.js"></script>
+<!-- Подключаем Bootstrap JS -->
+   <script src="https://shpilson.github.io/applestore/api/js/bootstrap.min.js"></script> 
+
 </body>
 </html>
