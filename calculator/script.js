@@ -23,9 +23,5 @@ const constants = {
       getNameInput: /^[(\d+)|(\d+\.\d)]+\s[\wА-Яа-я]+/i,
     },
   };
-  
 
-  // Удаляем пробелы в optionsLabel: дополнительных опциях без чекбокса с ценой
-
-const textWithoutSpaces = () => Array.from(constants.optionsLabel).map(el => el.textContent.trim());
   
