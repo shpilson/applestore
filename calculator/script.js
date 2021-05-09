@@ -1,22 +1,21 @@
-// Создаём константы 
+/**
+ * Создаём объект с константами
+ *
+ * container: основной блок с дополнительными услугами
+ * inputOptions: блок с дополнительными опциями
+ * checkbox: чекбоксы дополнительных опций
+ * optionsLabel: дополнительные опции без чекбокса
+ * price: основная цена самого товара
+ * regx: регулярные выражения
+ * 
+ */
+
 const constants = {
-
-    // Основной блок с дополнительными услугами
     container: document.querySelector('.product-single #product.row .form-group.option-group'),
-
-    // Блок с дополнительными опциями
     inputOptions: document.querySelector('.product-single #product.row .form-group.option-group > label ~ div'),
-    
-    // Чекбоксы дополнительных опций
     checkbox: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox'),
-
-    // Дополнительные опции без чекбокса
     optionsLabel: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox > label.custom-control-label'),
-    
-    // Основная цена
     price: document.querySelector('.product-single .product-price'),
-
-    // Регулярные выражения
     regx: {
       cutPrice: /\(([\d\. ]+)/,
       regexRepalce: /\(\+([\d\. ]+)₽\)/gi,
