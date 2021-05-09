@@ -16,12 +16,6 @@ const constants = {
     checkboxes: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox'),
     optionsWithPrice: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox > label.custom-control-label'),
     priceOfItem: document.querySelector('.product-single .product-price'),
-    regx: {
-      cutPrice: /\(([\d\. ]+)/,
-      regexRepalce: /\(\+([\d\. ]+)₽\)/gi,
-      getPrice: /(\d+ [\d+]+)|(\d+)/,
-      getNameInput: /^[(\d+)|(\d+\.\d)]+\s[\wА-Яа-я]+/i,
-    },
   };
 
   
