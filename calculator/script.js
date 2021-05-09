@@ -25,7 +25,7 @@ const constants = {
   };
   
 
-  // getInnerText.js
+  // Удаляем пробелы в optionsLabel: дополнительных опциях без чекбокса с ценой
 
 const getInnerText = () => Array.from(constants.optionsLabel).map(el => el.textContent.trim());
   
