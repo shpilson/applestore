@@ -1,8 +1,4 @@
-import constants from './calculator/justforme.js';
-import getInnerText from './calculator/justforme.js';
-import {setListener, changeCheckboxChild} from './calculator/justforme.js';
-import activateCheckbox from './calculator/justforme.js';
-import changeTypeInput from './calculator/justforme.js';
+import {constants, getInnerText, setListener, changeCheckboxChild, activateCheckbox, changeTypeInput} from './calculator/justforme.js';
 
 const advantage = document.querySelector('.custom_section');
 
