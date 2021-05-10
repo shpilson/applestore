@@ -18,4 +18,10 @@ const constants = {
     priceOfItem: document.querySelector('.product-single .product-price'),
   };
 
-  
+/**
+ * Создаём объект с константами
+ *
+ * 1) В (optionsWithPrice) находится цена в текстовом виде. Необходимо вернуть переменную только с цифрами,
+ * в числовом формате.
+ * 
+ */
