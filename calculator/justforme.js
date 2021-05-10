@@ -1,3 +1,5 @@
+import {constants, getInnerText, setListener, changeCheckboxChild, activateCheckbox, changeTypeInput} from './calculator/justforme.js';
+
 // Калькулятор 
 
 // Создаём константы (constants.js)

@@ -1,5 +1,3 @@
-import {constants, getInnerText, setListener, changeCheckboxChild, activateCheckbox, changeTypeInput} from './calculator/justforme.js';
-
 const advantage = document.querySelector('.custom_section');
 
 advantage.insertAdjacentHTML('afterbegin', `<div class="container">
