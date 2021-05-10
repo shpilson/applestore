@@ -43,6 +43,16 @@ const constants = {
  * 
  */
 
-const listOfOptions = Array.from(constants.addictedOptions); // NodeList дополнительных опций -> Массив
 
 
+
+// Выполняем 2 шаг. В (addictedOptions) находится цена в текстовом виде. 
+// Необходимо вернуть переменную только с цифрами, в числовом формате.
+
+// NodeList дополнительных опций -> Массив -> Получаем текст внутри доп. опций
+// можно так -> const listOfOptions = () => Array.from(constants.addictedOptions).map(el => el.textContent.trim());
+
+const listOfOptions = function () {
+    Array.from(constants.addictedOptions)
+    .map(el => el.textContent.trim());  
+} 
