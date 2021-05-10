@@ -36,6 +36,7 @@ const constants = {
     priceOfItem: document.querySelector('.product-single .product-price'),
   };
 
+export default constants;
 /**
  *
  * 2) В (optionsWithPrice) удаляем пробелы между символами.
@@ -44,5 +45,4 @@ const constants = {
  * 
  */
 
-let removeSpaces = constants.optionsWithPrice.textContent.trim();
 
