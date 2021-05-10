@@ -57,3 +57,4 @@ const listOfOptions = function () {
     .map(el => el.textContent.trim());  
 } 
 
+cdasd
