@@ -1,4 +1,15 @@
 /**
+ * 1) Создаём объект с константами
+ *
+ * 2) В (optionsWithPrice) удаляем пробелы между символами.
+ * 2.1) В (optionsWithPrice) находится цена в текстовом виде. Необходимо вернуть переменную только с цифрами,
+ * в числовом формате.
+ * 
+ * 2) В (priceOfItem) основная цена в текстовом виде. Удаляем пробелы. Переводим в цифры. Сохраняем в новой переменной.
+ * 3) 
+ */
+
+/**
  * Создаём объект с константами
  *
  * optionGroup: основной блок с дополнительными услугами
@@ -17,11 +28,3 @@ const constants = {
     optionsWithPrice: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox > label.custom-control-label'),
     priceOfItem: document.querySelector('.product-single .product-price'),
   };
-
-/**
- * Создаём объект с константами
- *
- * 1) В (optionsWithPrice) находится цена в текстовом виде. Необходимо вернуть переменную только с цифрами,
- * в числовом формате.
- * 
- */
