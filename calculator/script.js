@@ -44,6 +44,9 @@ const constants = {
 
 const listOfOptions = function () {
     Array.from(constants.addictedOptions)
-    .map(el => el.textContent.trim());  
+    .map(el => el.textContent.trim());
 } 
+
+// получаем строки с ценами
+const IntegerInAddictedOptions = listOfOptions.map(el => el.textContent.match(/[\d]/g)); 
 
