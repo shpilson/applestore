@@ -35,16 +35,6 @@ const constants = {
     priceOfItem: document.querySelector('.product-single .product-price'),
   };
 
-/**
- *
- * 2) В (addictedOptions) удаляем пробелы между символами.
- * 2.1) В (addictedOptions) находится цена в текстовом виде. Необходимо вернуть переменную только с цифрами,
- * в числовом формате.
- * 
- */
-
-
-
 
 // Выполняем 2 шаг. В (addictedOptions) находится цена в текстовом виде. 
 // Необходимо вернуть переменную только с цифрами, в числовом формате.
@@ -57,4 +47,3 @@ const listOfOptions = function () {
     .map(el => el.textContent.trim());  
 } 
 
-cdasd
