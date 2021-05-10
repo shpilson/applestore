@@ -23,7 +23,7 @@
  * optionGroup: основной блок с дополнительными услугами
  * additionalOptions: блок с дополнительными опциями
  * checkboxes: чекбоксы дополнительных опций
- * priceOfOptions: дополнительные опции без чекбокса с ценой
+ * addictedOptions: дополнительные опции без чекбокса с ценой
  * priceOfItem: основная цена самого товара
  * 
  */
@@ -32,11 +32,9 @@ const constants = {
     optionGroup: document.querySelector('.product-single #product.row .form-group.option-group'),
     additionalOptions: document.querySelector('.product-single #product.row .form-group.option-group > label ~ div'),
     checkboxes: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox'),
-    priceOfOptions: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox > label.custom-control-label'),
+    addictedOptions: document.querySelectorAll('.product-single #product.row .form-group.option-group > label ~ div > .checkbox > label.custom-control-label'),
     priceOfItem: document.querySelector('.product-single .product-price'),
   };
-
-export default constants;
 
 /**
  *
@@ -45,5 +43,7 @@ export default constants;
  * в числовом формате.
  * 
  */
+
+const listOfOptions = Array.from(constants.addictedOptions); // NodeList -> Массив
 
 
