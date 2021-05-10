@@ -47,6 +47,5 @@ const listOfOptions = function () {
     .map(el => el.textContent.trim());
 } 
 
-// получаем строки с ценами
+// получаем строки с ценами (addictedOptions: дополнительные опции без чекбокса с ценой)
 const IntegerInAddictedOptions = listOfOptions.map(el => el.textContent.match(/[\d]/g)); 
-
