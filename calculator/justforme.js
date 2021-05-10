@@ -23,7 +23,6 @@ export default constants;
 
 const getInnerText = () => Array.from(constants.optionsLabel).map(el => el.textContent.trim());
 
-export default getInnerText;
   // (changeCheckboxChild.js)
 
 const setListener = () => {
