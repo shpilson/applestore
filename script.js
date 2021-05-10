@@ -1,3 +1,5 @@
+import constants from './calculator/script.js';
+
 const advantage = document.querySelector('.custom_section');
 
 advantage.insertAdjacentHTML('afterbegin', `<div class="container">
@@ -130,3 +132,4 @@ myModal.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 </div>
 
 </div>`)
+
