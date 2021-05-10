@@ -17,11 +17,13 @@ const constants = {
     },
   };
   
-export default constants;
+export { constants };
 
   // getInnerText.js
 
 const getInnerText = () => Array.from(constants.optionsLabel).map(el => el.textContent.trim());
+
+export { getInnerText };
 
   // (changeCheckboxChild.js)
 
@@ -99,7 +101,7 @@ const activateCheckbox = () => {
     }
   };
 
-  export default activateCheckbox;
+  export { activateCheckbox };
 
   // changeTypeInput.js
 
@@ -108,4 +110,4 @@ const activateCheckbox = () => {
     inputs.length > 0 && inputs.forEach(input => input.querySelector('input').setAttribute('type', 'radio'));
   }
   
-  export default changeTypeInput;
+  export { changeTypeInput };
