@@ -56,3 +56,4 @@ const listOfOptions = function () {
     Array.from(constants.addictedOptions)
     .map(el => el.textContent.trim());  
 } 
+
