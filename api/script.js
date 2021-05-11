@@ -18,7 +18,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders
         `<table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">№ заказа</th>
             <th scope="col">Клиент</th>
             <th scope="col">Дата оформления</th>
@@ -29,7 +28,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
             <td>${res.response[i].order_id}</td>
             <td>${res.response[i].name}</td>
             <td>${res.response[i].date_added}</td>
