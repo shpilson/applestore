@@ -1,5 +1,7 @@
-const myModal = document.querySelector(".footer")
-myModal.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
+const myModal1 = document.querySelector(".footer")
+
+function myModal() {
+myModal1.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 
 <!-- Modal content -->
 <div class="modal-content">
@@ -16,5 +18,6 @@ myModal.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 </div>
 
 </div>`)
+}
 
 export default myModal;

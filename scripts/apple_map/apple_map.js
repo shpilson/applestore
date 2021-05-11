@@ -1,6 +1,7 @@
-const apple_map = document.querySelector(".custom_section")
+const apple_map1 = document.querySelector(".custom_section");
 
-apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="height: 100%;margin-top: 80px;position: relative;padding: 50px 0;width: 100%;">
+function apple_map() {
+apple_map1.insertAdjacentHTML('afterend', `<div class="mymap_section" style="height: 100%;margin-top: 80px;position: relative;padding: 50px 0;width: 100%;">
 
 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A463eac9ab974902527947ad58129996e289d642018dbd623cf607d5c4dc7ef13&amp;source=constructor" width="auto" height="auto" frameborder="0" style="
     width: 100%;
@@ -80,5 +81,6 @@ apple_map.insertAdjacentHTML('afterend', `<div class="mymap_section" style="heig
 </div><div class="contact-with-map row">
 </div>
 </div></div>`)
+}
 
 export default apple_map;
