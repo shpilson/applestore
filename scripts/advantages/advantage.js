@@ -1,5 +1,4 @@
 const advantage = document.querySelector('.custom_section');
-
 advantage.insertAdjacentHTML('afterbegin', `<div class="container">
 <div class="row">
 <h2 class="section-title mb-4 mt-4 w-100"><span>Наши преимущества</span></h2>
