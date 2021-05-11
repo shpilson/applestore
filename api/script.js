@@ -14,7 +14,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders
     .then(data => res = data)
     .then(data => {
     	for(let i in res.response){
-      	document.querySelector(".myItem").insertAdjacentHTML('beforeend', 
+      	document.querySelector(".myItem").insertAdjacentHTML('afterbegin', 
         `<tbody>
           <tr>
             <td>${res.response[i].order_id}</td>
