@@ -15,18 +15,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders
     .then(data => {
     	for(let i in res.response){
       	document.querySelector(".myItem").insertAdjacentHTML('beforeend', 
-        `<table class="table">
-        <thead>
-          <tr>
-            <th scope="col">№ заказа</th>
-            <th scope="col">Клиент</th>
-            <th scope="col">Дата оформления</th>
-            <th scope="col">Товаров в корзине</th>
-            <th scope="col">Общая сумма</th>
-            <th scope="col">Статус заказа</th>
-          </tr>
-        </thead>
-        <tbody>
+        `<tbody>
           <tr>
             <td>${res.response[i].order_id}</td>
             <td>${res.response[i].name}</td>
@@ -35,8 +24,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://ru.sellavi.com/gateway/orders
             <td>${res.response[i].total}</td>
             <td>${res.response[i].status}</td>
           </tr>
-        </tbody>
-      </table>`)
+        </tbody>`)
       }
     })
     .catch(err => console.log(err.message));
