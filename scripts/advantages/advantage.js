@@ -1,4 +1,4 @@
-const advantage = () => { document.querySelector('.custom_section');
+const advantage = document.querySelector('.custom_section');
 
 advantage.insertAdjacentHTML('afterbegin', `<div class="container">
 <div class="row">
@@ -21,6 +21,5 @@ advantage.insertAdjacentHTML('afterbegin', `<div class="container">
 </div>
 </div>
 </div>`)
-}
 
 export default advantage;
