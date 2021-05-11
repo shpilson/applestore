@@ -10,3 +10,7 @@ if (pages.main) {
     apple_map();
     myModal();
   }
+
+  if (pages.product) {
+    myModal_product();
+  }
