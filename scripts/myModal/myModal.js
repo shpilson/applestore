@@ -20,8 +20,6 @@ myModal1.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 </div>`)
 }
 
-export default myModal;
-
 function myModal_product() {
   myModal1.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
   
@@ -42,4 +40,4 @@ function myModal_product() {
   </div>`)
   }
   
-  export default myModal_product;
+  export default { myModal, myModal_product };
