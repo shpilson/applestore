@@ -22,6 +22,7 @@ advantage.insertAdjacentHTML('afterbegin', `<div class="container">
 </div>
 </div>`)
 
+export default advantage;
 
 const catalogue = document.querySelector("#home > div > div.content-area > section.page-section.homefeatured_category > div")
 
