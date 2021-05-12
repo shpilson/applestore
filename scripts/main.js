@@ -4,7 +4,7 @@ import catalogue from './catalogue/catalogue.js'; // Категория това
 import apple_map from './apple_map/apple_map.js'; // Карта контактов (над футером, на главной)
 
 import myModal from './myModal/myModal.js'; // Модальное окно (на главной)
-import myModal from './myModal/myModalProduct.js'; // Модальное окно (на странице товара)
+import myModalProduct from './myModal/myModalProduct.js'; // Модальное окно (на странице товара)
 
 if (pages.main) {
     advantage();
