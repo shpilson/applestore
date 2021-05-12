@@ -3,7 +3,7 @@ import advantage from './advantages/advantage.js'; // Блок преимуще�
 import catalogue from './catalogue/catalogue.js'; // Категория товаров
 import apple_map from './apple_map/apple_map.js'; // Карта контактов (над футером, на главной)
 
-import myModalActivate from './myModal/main/myModalActivate.js'; // Активация модального окна (на главной)
+// import myModalActivate from './myModal/main/myModalActivate.js'; // Активация модального окна (на главной)
 import myModal from './myModal/main/myModal.js'; // Модальное окно (на главной)
 
 
@@ -13,7 +13,7 @@ if (pages.main) {
     advantage();
     catalogue();
     apple_map();
-    myModalActivate();
+ //   myModalActivate();
     myModal();
   }
 
