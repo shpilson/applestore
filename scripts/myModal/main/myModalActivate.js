@@ -21,3 +21,5 @@ if(sessionStorage.getItem('#modal') !== 'true'){
 sessionStorage.setItem('#modal','true');
 	}
 }
+
+export default myModalActivate;
