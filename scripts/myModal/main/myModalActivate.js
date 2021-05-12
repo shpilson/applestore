@@ -1,6 +1,5 @@
 // Запуск скрипта после полной загрузки страницы
-function myModalActivate() {
-	$(document).ready(function ()  
+$(document).ready(function ()  
 {
 // Применяем класс закрытия по клику
   $(".close").on("click", function () 
@@ -20,6 +19,4 @@ if(sessionStorage.getItem('#modal') !== 'true'){
 // Для повторного показа окна, потребуется открыть новую вкладку и зайти на страницу повторно
 sessionStorage.setItem('#modal','true');
 	}
-}
 
-export default myModalActivate;
