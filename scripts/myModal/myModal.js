@@ -18,22 +18,14 @@ myModal1.insertAdjacentHTML('afterend', `<div id="modal" class="modal">
 </div>
 
 </div>`)
-}
 
-
-// Запуск скрипта после полной загрузки страницы
-$(document).ready(function MyModal()  
+$(".close").on("click", function () 
 {
-// Применяем класс закрытия по клику
-  $(".close").on("click", function () 
-	{
-		// Выбираем окно по элементу и закрываем после нажатия на "крестик"
-		$("#modal").css("display", "none")
-	});
-  
+  // Выбираем окно по элементу и закрываем после нажатия на "крестик"
+  $("#modal").css("display", "none")
 });
 
-
+}
 
 
 export default myModal;
