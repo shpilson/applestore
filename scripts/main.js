@@ -3,11 +3,10 @@ import advantage from './advantages/advantage.js'; // Блок преимуще�
 import catalogue from './catalogue/catalogue.js'; // Категория товаров
 import apple_map from './apple_map/apple_map.js'; // Карта контактов (над футером, на главной)
 
-// import myModalActivate from './myModal/main/myModalActivate.js'; // Активация модального окна (на главной)
+// Всплывающие окна
 import myModal from './myModal/main/myModal.js'; // Модальное окно (на главной)
-
-
 import myModalProduct from './myModal/product/myModalProduct.js'; // Модальное окно (на странице товара)
+import modalCheckout from './myModal/checkout/modal.js'; // Модальное окно (корзина)
 
 if (pages.main) {
     advantage();
@@ -19,4 +18,8 @@ if (pages.main) {
 
   if (pages.product) {
     myModalProduct();
+  }
+
+  if (pages.checkout) {
+    modalCheckout();
   }
