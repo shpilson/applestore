@@ -19,4 +19,4 @@ sessionStorage.setItem('#modalCheckout','true');
 	}
 }
 
-export default repeatModal;
+export default repeatModal; 
