@@ -10,9 +10,3 @@ $(document).ready(function ()
 });
 
 // Проверка сессии пользователя, первый ли он раз на странице. Если не в первый раз за сессию - блокируем показ всплывающего окна
-
-if(sessionStorage.getItem('#modalCheckout') !== 'true'){
-    $('#modalCheckout').css('display','block');
-
-sessionStorage.setItem('#modalCheckout','true');
-	}
