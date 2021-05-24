@@ -1,7 +1,7 @@
 const checkoutSelector = document.querySelector('.checkout-checkout');
 
 function modalCheckout() {
-checkoutSelector.insertAdjacentHTML('beforebegin', 
+checkoutSelector.insertAdjacentHTML('afterend', 
 
 `<div id="modalCheckout" class="modalCheckout">
 
