@@ -7,7 +7,7 @@ import apple_map from './apple_map/apple_map.js'; // Карта контакто
 import myModal from './myModal/main/myModal.js'; // Модальное окно (на главной)
 
 
-import myModalProduct from './myModal/myModalProduct.js'; // Модальное окно (на странице товара)
+import myModalProduct from './myModal/product/myModalProduct.js'; // Модальное окно (на странице товара)
 
 if (pages.main) {
     advantage();
