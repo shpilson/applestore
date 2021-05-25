@@ -7,9 +7,9 @@ checkoutSelector.insertAdjacentHTML('afterend',
 <div id="woofirstpurchase-popup-container-first" style="transform: scale(0.5); bottom: -5%;">
     <form id="woofirstpurchase-main-popup-form" method="post" action="">
         <div id="woofirstpurchase-popup-first-top" style="transform: translateY(0px) rotate(1800deg);"></div>
-        <div id="woofirstpurchase-popup-first-top-text" class="woofirstpurchase-popup-disappear-group">Ваш персональный купон</div>
+        <div id="woofirstpurchase-popup-first-top-text" class="woofirstpurchase-popup-disappear-group">Скидка на первый заказ</div>
         <div id="woofirstpurchase-popup-first-amount" class="woofirstpurchase-popup-disappear-group">10%</div>
-        <div id="woofirstpurchase-popup-first-bottom-text" class="woofirstpurchase-popup-disappear-group">скидка на первый заказ</div> 
+        <div id="woofirstpurchase-popup-first-bottom-text" class="woofirstpurchase-popup-disappear-group">Примените Ваш персональный купон</div> 
         <input type="email" name="woofirstpurchaseemail" id="woofirstpurchase-popup-first-email-input" class="woofirstpurchase-popup-disappear-group" placeholder="Enter your mail here" required=""> 
         <button type="submit" id="woofirstpurchase-popup-first-button" class="woofirstpurchase-popup-disappear-group">Спасибо!</button>
         <div id="woofirstpurchase-popup-first-nothanks-text" class="woofirstpurchase-popup-disappear-group">Закрыть окно</div>
