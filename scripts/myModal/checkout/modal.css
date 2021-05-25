@@ -182,7 +182,7 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
     font-weight: bold;
     color: #d33c3c;
     background-color: #ffe422;
-    padding: 10px;
+    padding: 30px;
     font-size: 2em;
     transition: all 0.5s ease;
 }
@@ -217,7 +217,7 @@ button#woofirstpurchase-popup-first-button {
     display: block;
     text-align: center;
     position: relative;
-    top: 56%;
+    top: 55%;
     width: 82%;
     height: 9.4%;
     border-radius: 25px;
