@@ -22,7 +22,7 @@ if (pages.main) {
   }
 
   if (pages.product) {
-    myModalProduct();
+  //  myModalProduct();
   }
 
   if (pages.checkout) {
