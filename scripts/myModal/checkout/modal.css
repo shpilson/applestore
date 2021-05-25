@@ -94,11 +94,6 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
     border: 0;
 }
 
-#modal {
-    display: flex;
-    opacity: 1;
-}
-
 #woofirstpurchase-popup-background {
     position: fixed;
     display: none;

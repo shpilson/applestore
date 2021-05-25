@@ -4,7 +4,7 @@ $(document).ready(function ()
   $("#woofirstpurchase-popup-first-button").on("click", function () 
 	{
 		// Выбираем окно по элементу и закрываем после нажатия на "крестик"
-		$("#modal").css("display", "none")
+		$("#woofirstpurchase-popup-background").css("display", "none")
 	});
   
 });
@@ -13,7 +13,7 @@ $(document).ready(function ()
 
 const repeatModal = function() {
     if(sessionStorage.getItem('#woofirstpurchase-popup-background') !== 'true'){
-    $('#woofirstpurchase-popup-background').css('display','block');
+    $('#woofirstpurchase-popup-backgroundmodalCheckout').css('display','block');
 
 sessionStorage.setItem('#woofirstpurchase-popup-background','true');
 	}
