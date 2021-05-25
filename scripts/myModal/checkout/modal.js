@@ -15,8 +15,7 @@ checkoutSelector.insertAdjacentHTML('afterend',
         <div id="woofirstpurchase-popup-first-nothanks-text" class="woofirstpurchase-popup-disappear-group">NO, THANKS</div>
     </form>
 </div>
-</div>
-`)
+</div>`)
 }
 
 export default modalCheckout;
