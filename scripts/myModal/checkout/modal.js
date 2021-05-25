@@ -3,7 +3,7 @@ const checkoutSelector = document.querySelector('.checkout-checkout');
 function modalCheckout() {
 checkoutSelector.insertAdjacentHTML('afterend', 
 
-`<div id="woofirstpurchase-popup-background" class="woofirstpurchase-popup-background-transparent-black">
+`<div id="woofirstpurchase-popup-background" class="woofirstpurchase-popup-background-transparent-black" style="display: flex;opacity: 1;">
 <div id="woofirstpurchase-popup-container-first" style="transform: scale(0.5); bottom: -5%;">
     <form id="woofirstpurchase-main-popup-form" method="post" action="">
         <div id="woofirstpurchase-popup-first-top" style="transform: translateY(0px) rotate(1800deg);"></div>
