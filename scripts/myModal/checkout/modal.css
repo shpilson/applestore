@@ -139,7 +139,7 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
     width: 630px;
     height: 309px;
     transition: all 0.5s ease;
-    transform: translateY(0px) rotate(1800deg);
+    transform: translateY(-3500px) rotate(0deg);
 }
 
 #woofirstpurchase-popup-first-top-text {
