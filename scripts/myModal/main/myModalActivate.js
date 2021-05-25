@@ -20,9 +20,13 @@ $(document).ready(function ()
 // Проверка сессии пользователя, первый ли он раз на странице
 // Если не в первый раз за сессию - блокируем показ всплывающего окна
 
-if(sessionStorage.getItem('#modal') !== 'true'){
+const repeatMainModal = function() {
+	if(sessionStorage.getItem('#modal') !== 'true'){
     $('#modal').css('display','block');
 // Если сессия первая - true, показываем всплывающее окно
 // Для повторного показа окна, потребуется открыть новую вкладку и зайти на страницу повторно
 sessionStorage.setItem('#modal','true');
 	}
+}
+
+export default repeatMainModal; 
