@@ -7,6 +7,13 @@ $(document).ready(function ()
 		// Выбираем окно по элементу и закрываем после нажатия на "крестик"
 		$("#modal").css("display", "none")
 	});
+
+	$(document).mouseup(function (e) {
+        var container = $("#modal");
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
   
 });
 
