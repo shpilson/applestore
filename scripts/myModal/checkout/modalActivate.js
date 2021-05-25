@@ -1,7 +1,7 @@
 $(document).ready(function ()  
 {
 // Применяем класс закрытия по клику
-  $("#woofirstpurchase-popup-first-button").on("click", function () 
+  $(".close").on("click", function () 
 	{
 		// Выбираем окно по элементу и закрываем после нажатия на "крестик"
 		$("#woofirstpurchase-popup-background").css("display", "none")
@@ -13,7 +13,7 @@ $(document).ready(function ()
 
 const repeatModal = function() {
     if(sessionStorage.getItem('#woofirstpurchase-popup-background') !== 'true'){
-    $('#woofirstpurchase-popup-backgroundmodalCheckout').css('display','block');
+    $('#woofirstpurchase-popup-background').css('display','flex');
 
 sessionStorage.setItem('#woofirstpurchase-popup-background','true');
 	}
