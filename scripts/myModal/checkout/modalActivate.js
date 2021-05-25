@@ -3,9 +3,16 @@ $(document).ready(function ()
 // Применяем класс закрытия по клику
   $("#woofirstpurchase-popup-first-button").on("click", function () 
 	{
-		// Выбираем окно по элементу и закрываем после нажатия на "крестик"
+		// Выбираем окно по элементу и закрываем после нажатия на кнопку
 		$("#woofirstpurchase-popup-background").css("display", "none")
 	});
+
+    $(document).mouseup(function (e) {
+        var container = $("#woofirstpurchase-popup-background");
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
   
 });
 
