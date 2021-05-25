@@ -212,7 +212,7 @@ button#woofirstpurchase-popup-first-button {
     background-color: #ef4b4b;
 }
 
-#woofirstpurchase-popup-first-button {
+.woofirstpurchase-popup-first-button {
     margin: auto;
     display: block;
     text-align: center;
