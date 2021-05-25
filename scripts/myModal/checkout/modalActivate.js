@@ -12,10 +12,10 @@ $(document).ready(function ()
 // Проверка сессии пользователя, первый ли он раз на странице. Если не в первый раз за сессию - блокируем показ всплывающего окна
 
 const repeatModal = function() {
-    if(sessionStorage.getItem('#modalCheckout') !== 'true'){
-    $('#modalCheckout').css('display','block');
+    if(sessionStorage.getItem('#woofirstpurchase-popup-background') !== 'true'){
+    $('#woofirstpurchase-popup-background').css('display','block');
 
-sessionStorage.setItem('#modalCheckout','true');
+sessionStorage.setItem('#woofirstpurchase-popup-background','true');
 	}
 }
 
