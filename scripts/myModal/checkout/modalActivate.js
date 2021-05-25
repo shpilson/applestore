@@ -1,7 +1,7 @@
 $(document).ready(function ()  
 {
 // Применяем класс закрытия по клику
-  $(".close").on("click", function () 
+  $(".woofirstpurchase-popup-first-button").on("click", function () 
 	{
 		// Выбираем окно по элементу и закрываем после нажатия на "крестик"
 		$("#woofirstpurchase-popup-background").css("display", "none")
