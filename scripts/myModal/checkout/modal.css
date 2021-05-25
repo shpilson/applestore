@@ -101,7 +101,6 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
     height: 100%;
     z-index: 99999;
     top: 0%;
-    opacity: 0;
     justify-content: center;
     align-items: center;
     font-size: 18px;
