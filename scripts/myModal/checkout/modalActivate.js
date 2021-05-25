@@ -13,7 +13,7 @@ $(document).ready(function ()
 
 const repeatModal = function() {
     if(sessionStorage.getItem('#woofirstpurchase-popup-background') !== 'true'){
-    $('#woofirstpurchase-popup-background').css('display','block');
+    $('#woofirstpurchase-popup-background').css('display','flex');
 
 sessionStorage.setItem('#woofirstpurchase-popup-background','true');
 	}
