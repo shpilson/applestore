@@ -11,7 +11,7 @@ checkoutSelector.insertAdjacentHTML('afterend',
         <div id="woofirstpurchase-popup-first-amount" class="woofirstpurchase-popup-disappear-group">10%</div>
         <div id="woofirstpurchase-popup-first-bottom-text" class="woofirstpurchase-popup-disappear-group">Ваш персональный купон</div> 
         <div id="coupon" class="woofirstpurchase-popup-disappear-group">LUCKYJUNE</div> 
-        <button type="submit" id="woofirstpurchase-popup-first-button" class="woofirstpurchase-popup-disappear-group">Спасибо!</button>
+        <button type="button" id="woofirstpurchase-popup-first-button" class="woofirstpurchase-popup-disappear-group">Спасибо!</button>
         <div class="close" id='close'>&times;</span>
     </form>
 </div>
