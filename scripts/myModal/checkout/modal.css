@@ -178,11 +178,13 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
 #coupon {
     text-align: center;
     position: relative;
-    top: 55%;
-    font-family: "Lato",sans-serif;
-    font-weight: lighter;
-    color: #252b37;
-    font-size: 1.546em;
+    top: 50%;
+    font-family: "Lato",monospace;
+    font-weight: bold;
+    color: #d33c3c;
+    background-color: #ffe422;
+    padding: 10px;
+    font-size: 2em;
     transition: all 0.5s ease;
 }
 
