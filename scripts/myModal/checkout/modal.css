@@ -131,7 +131,7 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
 }
 
 #woofirstpurchase-popup-first-top {
-    background-image: url();
+    background-image: url(../../../images/popup1top.png);
     background-size: cover;
     position: absolute;
     top: -23%;
