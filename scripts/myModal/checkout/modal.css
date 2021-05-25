@@ -80,3 +80,159 @@ body.ltr .close {
   right: 15px !important;
   left: auto !important;
 }
+
+/* Тест */
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#woofirstpurchase-popup-background {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0%;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.45em;
+}
+
+.woofirstpurchase-popup-background-transparent-black {
+    background-color: rgba(0,0,0,.86);
+}
+
+
+#woofirstpurchase-popup-container-first {
+    width: 455px;
+    min-width: 455px;
+    height: 618px;
+    border-radius: 25px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    position: relative;
+    bottom: -100%;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 55%);
+}
+
+#woofirstpurchase-main-popup-form {
+    display: contents;
+    height: 100%;
+}
+
+#woofirstpurchase-popup-first-top {
+    background-image: url();
+    background-size: cover;
+    position: absolute;
+    top: -23%;
+    right: -16%;
+    width: 630px;
+    height: 309px;
+    transition: all 0.5s ease;
+    transform: translateY(-3500px) rotate(0deg);
+}
+
+#woofirstpurchase-popup-first-top-text {
+    text-align: center;
+    position: relative;
+    top: 31%;
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    color: #252b37;
+    font-size: 1.546em;
+    transition: all 0.5s ease;
+}
+
+#woofirstpurchase-popup-first-amount {
+    text-align: center;
+    position: relative;
+    top: 38%;
+    font-family: "Lato Black",sans-serif;
+    font-weight: 900;
+    color: #ef4b4b;
+    font-size: 5.3em;
+    transition: all 0.5s ease;
+}
+
+#woofirstpurchase-popup-first-bottom-text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-family: "Lato",sans-serif;
+    font-weight: lighter;
+    color: #252b37;
+    font-size: 1.546em;
+    transition: all 0.5s ease;
+}
+
+#woofirstpurchase-popup-first-email-input {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 53%;
+    width: 82%;
+    height: 9.4%;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    border: 0;
+    color: #252b37;
+    transition: all 0.5s ease;
+    display: block;
+    float: none;
+    box-shadow: none;
+    font-size: 20.9px;
+    font-family: "Lato",sans-serif;
+}
+
+#woofirstpurchase-main-popup-form 
+button#woofirstpurchase-popup-first-button {
+    background: #ef4b4b;
+    background-color: #ef4b4b;
+}
+
+#woofirstpurchase-popup-first-button {
+    margin: auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 56%;
+    width: 82%;
+    height: 9.4%;
+    border-radius: 25px;
+    background: #ef4b4b;
+    background-color: #ef4b4b;
+    border: 0;
+    font-size: 20.9px;
+    font-family: "Lato",sans-serif;
+    color: #fff;
+    padding: 3px;
+    outline: none;
+    box-shadow: none;
+}
+
+#woofirstpurchase-popup-first-nothanks-text {
+    text-align: center;
+    position: relative;
+    top: 61%;
+    font-family: "Lato Black",sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #252b37;
+    font-size: .91em;
+    width: max-content;
+    margin: auto;
+}
+
+.woofirstpurchase-popup-disappear-group {
+    transition: all 0.25s ease;
+}
