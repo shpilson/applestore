@@ -23,8 +23,7 @@ $(document).ready(function ()
 const repeatMainModal = function() {
 	if(sessionStorage.getItem('#modal') !== 'true'){
     $('#modal').css('display','block');
-// Если сессия первая - true, показываем всплывающее окно
-// Для повторного показа окна, потребуется открыть новую вкладку и зайти на страницу повторно
+
 sessionStorage.setItem('#modal','true');
 	}
 }
