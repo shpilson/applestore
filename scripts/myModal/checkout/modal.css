@@ -175,6 +175,17 @@ html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, the
     transition: all 0.5s ease;
 }
 
+#coupon {
+    text-align: center;
+    position: relative;
+    top: 55%;
+    font-family: "Lato",sans-serif;
+    font-weight: lighter;
+    color: #252b37;
+    font-size: 1.546em;
+    transition: all 0.5s ease;
+}
+
 #woofirstpurchase-popup-first-email-input {
     margin: auto;
     text-align: center;
