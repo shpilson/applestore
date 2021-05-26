@@ -1,6 +1,7 @@
 import priceNumber from './script.js'; // Базовая цена (строка) -> Число
 
 const inputSelector = document.querySelector('.quantity.buttons_added');
+const test = console.log(document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show.overflowed_cart > div > div > div > div > div > div.row.products_row > div > div:nth-child(1)"));
 
 function inputCustom() {
     inputSelector.insertAdjacentHTML('beforebegin', `    
