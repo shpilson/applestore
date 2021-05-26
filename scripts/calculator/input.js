@@ -2,6 +2,10 @@ import priceNumber from './script.js'; // Базовая цена (строка)
 
 const inputSelector = document.querySelector('.quantity.buttons_added');
 
+document.querySelector('.header-cart').addEventListener('click', () => {
+    console.log('click')
+})
+
 function inputCustom() {
     inputSelector.insertAdjacentHTML('beforebegin', `    
 <div class="quantity_new buttons_added">
@@ -24,9 +28,6 @@ function inputCustom() {
     }
 }
 
-document.querySelector('.header-cart').addEventListener('click', () => {
-    console.log('click')
-})
 
 export default inputCustom;
 
