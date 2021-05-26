@@ -13,7 +13,7 @@ import modalCheckout from './myModal/checkout/modal.js'; // Модальное �
 import repeatModal from './myModal/checkout/modalActivate.js'; // Активирация окна на странице корзины
 
 // import priceNumber from './calculator/script.js'; // Базовая цена (строка) -> Число
-import inputCustom from './calculator/input.js'; // Поле для ввода кг
+// import inputCustom from './calculator/input.js'; // Поле для ввода кг
 
 if (pages.main) {
     advantage();
