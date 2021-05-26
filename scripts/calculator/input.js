@@ -42,6 +42,8 @@ function inputCustom() {
     document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
     }
 
+    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
+    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
 }
 
 export default inputCustom;
