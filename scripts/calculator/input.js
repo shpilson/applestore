@@ -1,7 +1,7 @@
-const inputSelector = document.querySelector('.btn.btn-theme.btn-cart.btn-icon-left.d-none');
+const inputSelector = document.querySelector('.quantity.buttons_added');
 
 function inputCustom() {
-    inputSelector.insertAdjacentHTML('afterend', `    
+    inputSelector.insertAdjacentHTML('beforebegin', `    
 <div class="quantity_new buttons_added">
     <i class="fas fa-check" style="display: none"></i>
             <i data-action="minus" class="fas fa-minus quantity_key"></i>
