@@ -12,7 +12,7 @@ import repeatMainModal from './myModal/main/myModalActivate.js'; //  Актив�
 import modalCheckout from './myModal/checkout/modal.js'; // Модальное окно (корзина)
 import repeatModal from './myModal/checkout/modalActivate.js'; // Активирация окна на странице корзины
 
-import priceNumber from './calculator/script.js'; // Базовая цена -> Число
+import priceNumber from './calculator/script.js'; // Базовая цена (строка) -> Число
 
 if (pages.main) {
     advantage();
