@@ -21,5 +21,9 @@ function inputCustom() {
     }
 }
 
+document.querySelector('.header-cart').addEventListener('click', () => {
+    console.log('click')
+})
+
 export default inputCustom;
 
