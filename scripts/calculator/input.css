@@ -101,3 +101,7 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
     background-color: transparent;
     color: #f1f1f1;
 }
+
+#button-cart {
+    display: none;
+}

@@ -1,6 +1,6 @@
 import priceNumber from './script.js'; // Базовая цена (строка) -> Число
 
-const inputSelector = document.querySelector('.quantity.buttons_added');
+const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
 const summarySelector = document.querySelector('.product-availability');
 
 document.querySelector('.header-cart').addEventListener('click', () => {
@@ -14,7 +14,7 @@ function inputCustom() {
                 <input type="number" class="quantity_field form-control" name="quantity" placeholder="Количество кг" id="quantity">
 </div>
 
-<input data-action="plus" class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Купить"/>`)
+<input data-action="plus" class="btn btn-theme btn-cart btn-icon-left no-quantity" id="butt" type="button" value="Купить"/>`)
     
     summarySelector.insertAdjacentHTML('afterend', `
     <div class="product-availability">
