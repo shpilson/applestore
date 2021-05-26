@@ -43,11 +43,11 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
     margin: 10px 0 0 5px;
 }
 
-body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity i, body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity input {
+body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity_new i, body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity input {
     color: #00b16a;
 }
 
-body.theme_11.product-product .product-single.product-item .buttons .quantity i {
+body.theme_11.product-product .product-single.product-item .buttons .quantity_new i {
     padding: 12px;
     display: flex;
     flex-direction: column;
