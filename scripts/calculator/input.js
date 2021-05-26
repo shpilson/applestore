@@ -1,6 +1,7 @@
 import priceNumber from './script.js'; // Базовая цена (строка) -> Число
 
 const inputSelector = document.querySelector('.quantity.buttons_added');
+const summarySelector = document.querySelector('.product-availability');
 
 document.querySelector('.header-cart').addEventListener('click', () => {
     console.log('click')
@@ -21,6 +22,15 @@ function inputCustom() {
 <div id="test"></div>
 <div id="test2"></div>
 `)
+    
+    summarySelector.insertAdjacentHTML('afterend', `
+    <div class="product-availability">
+        <div id="test"></div>
+        <div id="test2"></div>
+    </div>`)
+
+
+
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     const summary = val * priceNumber;
@@ -34,15 +44,5 @@ function inputCustom() {
 
 }
 
-
-const summarySelector = document.querySelector('.product-availability');
-function summaryText() {
-    summarySelector.insertAdjacentHTML('afterend', `
-    <div class="product-availability">
-        <div id="test"></div>
-        <div id="test2"></div>
-    </div>`)
-}
-
-export {inputCustom, summaryText};
+export default inputCustom;
 
