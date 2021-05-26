@@ -24,7 +24,7 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity {
 /* New */
 
 body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity_new {
-    border-color: #00b16a;
+    border-color: unset;
 }
 
 body.theme_11.product-product .product-single.product-item .buttons .quantity_new {
@@ -33,7 +33,7 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
 body.theme_11.product-product .product-single.product-item .buttons .quantity_new {
     display: flex;
     justify-content: space-around;
-    border: 2px solid;
+    border: unset;
     max-width: 100%;
     flex: 1;
 }
