@@ -17,7 +17,7 @@ function inputCustom() {
 <i class="far fa-shopping-cart"></i>Купить</button>
 
 <input id="butt" type="button" value="Кнопка"/>
-<div id="str"></div>
+<div id="str"></div><br>
 <div id="test"></div>
 `)
     butt.onclick = function() {
