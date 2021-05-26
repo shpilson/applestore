@@ -1,3 +1,5 @@
+import priceNumber from './script.js'; // Базовая цена (строка) -> Число
+
 const inputSelector = document.querySelector('.quantity.buttons_added');
 
 function inputCustom() {
@@ -12,7 +14,7 @@ function inputCustom() {
 `)
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
-    document.getElementById('str').innerHTML="Вы ввели: " + val;
+    document.getElementById('str').innerHTML="Вывод: " + val + priceNumber;
     }
 }
 
