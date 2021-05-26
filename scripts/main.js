@@ -26,7 +26,7 @@ if (pages.main) {
 
   if (pages.product) {
   //  myModalProduct();
-    inputCustom();
+  //  inputCustom();
   //  priceNumber();
   }
 
