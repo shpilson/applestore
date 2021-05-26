@@ -32,10 +32,17 @@ function inputCustom() {
     document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
     }
 
-    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
-    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
 }
 
 
-export default inputCustom;
+const summarySelector = document.querySelector('.product-availability');
+function summaryText() {
+    summarySelector.insertAdjacentHTML('afterend', `
+    <div class="product-availability">
+        <div id="test"></div>
+        <div id="test2"></div>
+    </div>`)
+}
+
+export {inputCustom, summaryText};
 
