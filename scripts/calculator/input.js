@@ -15,7 +15,7 @@ function inputCustom() {
 <input id="butt" type="button" value="Кнопка"/>
 <div id="str"></div>
 `)
-    button-cart.onclick = function() {
+    butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     document.getElementById('str').innerHTML="Вывод: " + (val * priceNumber);
     }
