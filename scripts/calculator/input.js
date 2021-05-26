@@ -1,4 +1,4 @@
-// import priceNumber from './script.js'; // Базовая цена (строка) -> Число
+import priceNumber from './script.js'; // Базовая цена (строка) -> Число
 
 const inputSelector = document.querySelector('.quantity.buttons_added');
 
