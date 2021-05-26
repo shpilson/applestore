@@ -15,9 +15,6 @@ function inputCustom() {
 </div>
 
 <input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Купить"/>
-
-<div id="test"></div>
-<div id="test2"></div>
 `)
     
     summarySelector.insertAdjacentHTML('afterend', `
