@@ -9,8 +9,8 @@ function inputCustom() {
                 <input type="number" class="quantity_field form-control" name="quantity" placeholder="1" id="quantity">
 </div>
 
-<button class="btn btn-theme btn-cart btn-icon-left " id="butt" data-loading-text="Загрузка...">
-<i class="far fa-shopping-cart"></i>Купить</button>
+<input id="butt"><button class="btn btn-theme btn-cart btn-icon-left " id="button-cart" data-loading-text="Загрузка...">
+<i class="far fa-shopping-cart"></i>Купить</button></input>
 
 <input id="butt" type="button" value="Кнопка"/>
 <div id="str"></div>
