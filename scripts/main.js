@@ -26,8 +26,8 @@ if (pages.main) {
 
   if (pages.product) {
   //  myModalProduct();
-  //  inputCustom();
-  //  priceNumber();
+    inputCustom();
+    priceNumber();
   }
 
   if (pages.checkout) {

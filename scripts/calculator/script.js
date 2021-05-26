@@ -1,4 +1,4 @@
-let priceSelector = document.querySelector('.product-price');
+const priceSelector = document.querySelector('.product-price');
 
 let priceContent = priceSelector.textContent;
 let priceSplit = priceContent.split('.');
