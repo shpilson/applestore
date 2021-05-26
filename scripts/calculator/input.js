@@ -12,7 +12,7 @@ function inputCustom() {
 <button class="btn btn-theme btn-cart btn-icon-left" id="button-cart" data-loading-text="Загрузка...">
 <i class="far fa-shopping-cart"></i>Купить</button>
 
-<input id="butt" type="button" value="Кнопка" class=""/>
+<input id="butt" type="button" value="Кнопка" data-action="plus"/>
 <div id="str"></div>
 `)
     butt.onclick = function() {
