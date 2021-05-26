@@ -4,7 +4,7 @@ function inputCustom() {
     inputSelector.insertAdjacentHTML('afterend', `    
 <div class="quantity_new buttons_added">
     <i class="fas fa-check" style="display: none"></i>
-        <input type="text" class="quantity_field form-control" name="quantity_new" value="Сколько кг?">
+        <input type="text" class="quantity_field form-control" name="quantity" value="Сколько кг?">
 </div>`)
 }
 
