@@ -7,6 +7,7 @@ function inputCustom() {
                 <input type="text" class="quantity_field form-control" name="quantity" placeholder="1" id="quantity">
 </div>
 
+<input id="butt" type="button" value="Кнопка"/>
 <div id="str"></div>
 `)
 
