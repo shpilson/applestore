@@ -61,7 +61,7 @@ body.theme-green-1.theme_11.product-product .product-single.product-item .button
 }
 
 body.theme_11.product-product .product-single.product-item .buttons .quantity_new input.quantity_field {
-    max-width: 100px;
+    max-width: 100%;
     padding: 12px 10px;
     max-height: unset;
     height: 100%;
