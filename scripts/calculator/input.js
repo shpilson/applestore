@@ -18,6 +18,7 @@ function inputCustom() {
 
 <input id="butt" type="button" value="Кнопка"/>
 <div id="str"></div>
+<div id="test"></div>
 `)
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
@@ -26,6 +27,8 @@ function inputCustom() {
 
     localStorage.setItem("quantity", val);
     localStorage.setItem("summary", summary);
+
+    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
     }
 }
 
