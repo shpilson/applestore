@@ -54,3 +54,29 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
     justify-content: center;
     cursor: pointer;
 }
+
+body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity_new i, 
+body.theme-green-1.theme_11.product-product .product-single.product-item .buttons .quantity_new input {
+    color: #00b16a;
+}
+
+body.theme_11.product-product .product-single.product-item .buttons .quantity_new input.quantity_field {
+    max-width: 40px;
+    padding: 12px 10px;
+    max-height: unset;
+    height: 100%;
+}
+body.theme_11.product-product .product-single.product-item .buttons .quantity_new input.minus, body.theme_11.product-product .product-single.product-item .buttons .quantity input.plus, body.theme_11.product-product .product-single.product-item .buttons .quantity input.quantity_field {
+    border: unset;
+    background-color: transparent;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    max-height: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
