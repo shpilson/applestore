@@ -105,3 +105,8 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
 body .btn.btn-theme {
     width: 100%;
 }
+
+body.theme-green-1.theme_11 .btn.btn-theme:not(.btn-wish-list) {
+    background: #fd6e05;
+    border-color: #ff8732;
+}
