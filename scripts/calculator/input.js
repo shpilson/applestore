@@ -27,6 +27,9 @@ function inputCustom() {
 
     localStorage.setItem("quantity", val);
     localStorage.setItem("summary", summary);
+
+    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
+    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
     }
 
     document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
