@@ -31,7 +31,7 @@ function inputCustom() {
 
 
 
-    ['button-cart'].onclick = function() {
+    butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     const summary = val * priceNumber;
 
