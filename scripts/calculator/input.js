@@ -14,10 +14,7 @@ function inputCustom() {
                 <input type="number" class="quantity_field form-control" name="quantity" placeholder="Количество кг" id="quantity">
 </div>
 
-<button class="btn btn-theme btn-cart btn-icon-left" id="button-cart" data-loading-text="Загрузка...">
-<i class="far fa-shopping-cart"></i>Купить</button>
-
-<input id="butt" type="button" value="Купить"/>
+<input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Купить"/>
 
 <div id="test"></div>
 <div id="test2"></div>
