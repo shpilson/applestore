@@ -20,6 +20,7 @@ function inputCustom() {
     document.getElementById('str').innerHTML="Вывод: " + (val * priceNumber);
 
     localStorage.setItem("quantity", val);
+    localStorage.setItem("summary", priceNumber);
     }
 }
 
