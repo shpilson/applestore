@@ -80,3 +80,24 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
     justify-content: center;
     text-align: center;
 }
+
+
+
+.product-product .product-single .buttons .btn-cart {
+    float: right;
+    margin-top: 10px;
+    margin-left: 5px;
+    max-width: 50%;
+    background-color: #232323;
+    border-color: #232323;
+    border-width: 3px;
+    color: #fff;
+    height: 50px;
+    width: 270px;
+    border-radius: 0;
+}
+
+.product-product .product-single .buttons .btn-cart:hover {
+    background-color: transparent;
+    color: #f1f1f1;
+}
