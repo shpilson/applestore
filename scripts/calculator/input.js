@@ -21,10 +21,11 @@ function inputCustom() {
 `)
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
-    document.getElementById('str').innerHTML="Вывод: " + (val * priceNumber);
+    const summary = val * priceNumber;
+    document.getElementById('str').innerHTML="Вывод: " + summary;
 
     localStorage.setItem("quantity", val);
-    localStorage.setItem("summary", priceNumber);
+    localStorage.setItem("summary", summary);
     }
 }
 
