@@ -9,10 +9,10 @@ function inputCustom() {
                 <input type="number" class="quantity_field form-control" name="quantity" placeholder="1" id="quantity">
 </div>
 
-<div id="butt>"<button class="btn btn-theme btn-cart btn-icon-left" id="button-cart" data-loading-text="Загрузка...">
-<i class="far fa-shopping-cart"></i>Купить</button></div>
+<button class="btn btn-theme btn-cart btn-icon-left" id="button-cart" data-loading-text="Загрузка...">
+<i class="far fa-shopping-cart"></i>Купить</button>
 
-<input id="butst" type="button" value="Кнопка" class=""/>
+<input id="butt" type="button" value="Кнопка" class=""/>
 <div id="str"></div>
 `)
     butt.onclick = function() {
