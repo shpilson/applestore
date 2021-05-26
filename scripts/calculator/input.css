@@ -94,7 +94,7 @@ body.theme_11.product-product .product-single.product-item .buttons .quantity_ne
     color: #fff;
     height: 50px;
     width: 270px;
-    border-radius: 0;
+    border-radius: 4px;
 }
 
 .product-product .product-single .buttons .btn-cart:hover {
