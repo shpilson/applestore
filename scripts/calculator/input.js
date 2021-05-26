@@ -16,15 +16,14 @@ function inputCustom() {
 <button class="btn btn-theme btn-cart btn-icon-left" id="button-cart" data-loading-text="Загрузка...">
 <i class="far fa-shopping-cart"></i>Купить</button>
 
-<input id="butt" type="button" value="Кнопка"/>
-<div id="str"></div><br>
+<input id="butt" type="button" value="Купить"/>
+
 <div id="test"></div><br>
 <div id="test2"></div>
 `)
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     const summary = val * priceNumber;
-    document.getElementById('str').innerHTML="Вывод: " + summary;
 
     localStorage.setItem("quantity", val);
     localStorage.setItem("summary", summary);
