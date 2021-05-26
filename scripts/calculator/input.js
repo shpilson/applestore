@@ -11,7 +11,7 @@ function inputCustom() {
 `)
 
     const val = document.getElementById('quantity').value;
-    document.getElementById('str').innerHTML="Вы ввели: "+val;
+    document.getElementById('str').innerHTML="Вы ввели: " + val;
 }
 
 export default inputCustom;
