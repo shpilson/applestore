@@ -10,7 +10,7 @@ function inputCustom() {
 <div id="str"></div>
 `)
 
-    let val = document.getElementById('quantity').value;
+    const val = document.getElementById('quantity').value;
     document.getElementById('str').innerHTML="Вы ввели: "+val;
 }
 
