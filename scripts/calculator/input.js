@@ -15,7 +15,8 @@ function inputCustom() {
 <button class="btn"><i class="fa fa-plus"></i></button>
 </div>
 
-<input class="btn btn-theme btn-cart btn-icon-left" id="button-cart" type="button" value="Взвесить"/>`)
+<button class="btn btn-theme btn-cart btn-icon-left " id="button-cart" data-loading-text="Загрузка..."><i class="far fa-shopping-cart"></i>Купить</button>
+<input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
 
 
 
