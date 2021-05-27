@@ -8,7 +8,7 @@ document.querySelector('.header-cart').addEventListener('click', () => {
 })
 
 function inputCustom() {
-    inputSelector.insertAdjacentHTML('beforebegin', `    
+    inputSelector.insertAdjacentHTML('afterend', `    
 <div class="quantity_new buttons_added">
     <i class="fas fa-check" style="display: none"></i>
                 <input type="number" class="quantity_field form-control" name="quantity" placeholder="Количество кг" id="quantity">
