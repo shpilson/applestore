@@ -48,14 +48,6 @@ function inputCustom() {
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
     }
 
-    
-    const cartButton = document.getElementById('.header-cart');
-
-    myFunc = function() {
-        cartButton.onclick()
-    }
-
-
 
     const price = document.querySelector(".product-price");
     document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
