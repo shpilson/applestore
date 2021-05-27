@@ -29,6 +29,11 @@ function inputCustom() {
         <div id="test2"></div>
     </div>`)
 
+
+
+
+
+
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     const summary = val * priceNumber;
@@ -41,13 +46,6 @@ function inputCustom() {
 
     const price = document.querySelector(".product-price");
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
-    }
-    
-    const price = document.querySelector(".product-price");
-    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
-    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
-
-    price.textContent = localStorage.getItem("summary") + ".00 ₽";
 
     document.querySelector('.header-cart').addEventListener('click', () => {
         quantitySelector.insertAdjacentHTML('afterend', 
@@ -55,6 +53,19 @@ function inputCustom() {
     
         document.getElementById('new_quantity').innerHTML="Вес: " + localStorage.getItem("quantity") + " кг";
     })
+    }
+
+    
+
+
+
+
+
+    const price = document.querySelector(".product-price");
+    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
+    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
+
+    price.textContent = localStorage.getItem("summary") + ".00 ₽";
 
 }
 
