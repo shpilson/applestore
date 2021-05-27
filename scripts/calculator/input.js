@@ -12,9 +12,9 @@ function inputCustom() {
 <div class="quantity">
 <i class="fas fa-check" style="display: none"></i>
 <input type="number" class="quantity_field form-control" name="quantity" placeholder="Количество кг" id="quantity">
-</div>
 
-<input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
+<input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>
+</div>`)
     
     summarySelector.insertAdjacentHTML('afterend', `
     <div class="product-availability">
