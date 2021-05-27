@@ -49,8 +49,11 @@ function inputCustom() {
     }
 
     
+    const cartButton = document.getElementById('.header-cart');
 
-
+    myFunc = function() {
+        cartButton.onclick()
+    }
 
 
 
