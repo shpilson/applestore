@@ -9,9 +9,9 @@ document.querySelector('.header-cart').addEventListener('click', () => {
 
 function inputCustom() {
     inputSelector.insertAdjacentHTML('afterend', `    
-<div class="quantity_new buttons_added">
-    <i class="fas fa-check" style="display: none"></i>
-                <input type="number" class="quantity_field form-control" name="quantity" placeholder="Количество кг" id="quantity">
+<div class="quantity">
+<i class="fas fa-check" style="display: none"></i>
+<input type="number" class="quantity_field form-control" name="quantity" placeholder="Количество кг" id="quantity">
 </div>
 
 <input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
