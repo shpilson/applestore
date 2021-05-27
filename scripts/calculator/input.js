@@ -46,13 +46,6 @@ function inputCustom() {
 
     const price = document.querySelector(".product-price");
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
-
-    document.querySelector('.header-cart').addEventListener('click', () => {
-        quantitySelector.insertAdjacentHTML('afterend', 
-        `<div id="new_quantity"></div>`);
-    
-        document.getElementById('new_quantity').innerHTML="Вес: " + localStorage.getItem("quantity") + " кг";
-    })
     }
 
     
