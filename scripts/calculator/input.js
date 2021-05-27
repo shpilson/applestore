@@ -1,5 +1,9 @@
 import priceNumber from './script.js'; // Базовая цена (строка) -> Число
 
+document.querySelector('button.btn.btn-theme.btn-cart.btn-icon-left').addEventListener('click', () => {
+    console.log('click')
+})
+
 const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
 const summarySelector = document.querySelector('.product-availability');
 
