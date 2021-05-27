@@ -10,9 +10,7 @@ document.querySelector('.header-cart').addEventListener('click', () => {
 function inputCustom() {
     inputSelector.insertAdjacentHTML('afterbegin', `    
 <div class="quantity_new">
-<button class="btn"><i class="fa fa-minus"></i></button>
 <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
-<button class="btn"><i class="fa fa-plus"></i></button>
 </div>
 
 <input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
@@ -38,8 +36,8 @@ function inputCustom() {
     const price = document.querySelector(".product-price");
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
     }
+    
     const price = document.querySelector(".product-price");
-
     document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
     document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
 
