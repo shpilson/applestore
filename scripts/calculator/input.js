@@ -4,12 +4,14 @@ document.querySelector('button.btn.btn-theme.btn-cart.btn-icon-left').addEventLi
     console.log('click')
 })
 
-const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
-const summarySelector = document.querySelector('.product-availability');
-
 document.querySelector('.header-cart').addEventListener('click', () => {
     console.log('click')
 })
+
+const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
+
+const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
+const summarySelector = document.querySelector('.product-availability');
 
 function inputCustom() {
     inputSelector.insertAdjacentHTML('afterbegin', `    
@@ -46,6 +48,12 @@ function inputCustom() {
     document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
 
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    quantitySelector.insertAdjacentHTML('afterend', 
+    `<div id="new_quantity"></div>`);
+
+    document.getElementById('new_quantity').innerHTML="Вес: " + localStorage.getItem("quantity") + " кг";
+
 }
 
 export default inputCustom;
