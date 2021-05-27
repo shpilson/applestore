@@ -11,7 +11,7 @@ function inputCustom() {
     inputSelector.insertAdjacentHTML('afterbegin', `    
 <div class="quantity_new">
 <button class="btn"><i class="fa fa-minus"></i></button>
-<input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
+<input type="number" class="form-control qty" name="quantity" placeholder="0.1" step="0.1" id="quantity">
 <button class="btn"><i class="fa fa-plus"></i></button>
 </div>
 
