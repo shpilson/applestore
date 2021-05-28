@@ -22,7 +22,7 @@ function inputCustom() {
     const priceNumber = Number(priceJoin);
 
     const newButton = document.getElementById('button-cart');
-    newButton.onclick = function() {
+    butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     const summary = val * priceNumber;
 
