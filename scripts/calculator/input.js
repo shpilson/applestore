@@ -46,6 +46,12 @@ function inputCustom() {
 
     const price = document.querySelector(".product-price");
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    
+
+
+    let dropdownSelector = document.querySelector('.dropdown');
+    dropdownSelector.classList.add('show');
     }
 
 
