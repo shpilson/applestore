@@ -43,7 +43,10 @@ function inputCustom() {
     const quantitySelector = document.querySelector("p.item-qty.mt-3");
     quantitySelector.textContent = "Вес: " + localStorage.getItem("quantity") + " кг";
     
-    const newTotalPriceSelector = document.querySelectorAll(".media-body+p");
+    const newSummaryPriceSelector = document.querySelectorAll(".media-body+p");
+    newSummaryPriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    const newTotalPriceSelector = document.querySelector(".row.vouchers div .media:nth-child(2) .item-price");
     newTotalPriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
 
     }
