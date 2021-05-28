@@ -1,27 +1,25 @@
 function inputCustom() {
+    
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
+    inputSelector.insertAdjacentHTML('afterbegin', `    
+        <div class="quantity_new">
+            <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
+        </div>
+            <input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
+
     const summarySelector = document.querySelector('.product-availability');
+    summarySelector.insertAdjacentHTML('afterend', `
+        <div class="product-availability">
+            <div id="test"></div>
+            <div id="test2"></div>
+        </div>`)
 
     const priceSelector = document.querySelector('.product-price');
-
     let priceContent = priceSelector.textContent;
     let priceSplit = priceContent.split('.');
     let priceCut = priceSplit[0];
     let priceJoin = priceCut.split(' ').join('');
     const priceNumber = Number(priceJoin);
-
-    inputSelector.insertAdjacentHTML('afterbegin', `    
-<div class="quantity_new">
-<input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
-</div>
-
-<input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
-
-    summarySelector.insertAdjacentHTML('afterend', `
-    <div class="product-availability">
-        <div id="test"></div>
-        <div id="test2"></div>
-    </div>`)
 
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
