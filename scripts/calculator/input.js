@@ -28,10 +28,17 @@ function inputCustom() {
   
     const calc = () => {
       const val = document.getElementById('quantity').value;
+      const productTitle = document.querySelector('.product-title').textContent;
+
       const summary = val * priceNumber;
-  
-      localStorage.setItem('quantity', val);
+        const products = []
+        const product = {
+            val, summary, productTitle
+        }
+
+        localStorage.setItem('quantity', val);
       localStorage.setItem('summary', summary);
+      localStorage.setItem('title', productTitle);
   
       document.getElementById('test').innerHTML =
         'Вы хотите купить: ' + localStorage.getItem('quantity') + ' кг';
@@ -72,7 +79,7 @@ function inputCustom() {
     };
   
     if (localStorage.getItem('quantity')) {
-        document.querySelectorAll('.cart-content .media.product-wrapper').forEach(product => {
+        document.querySelectorAll('.cart-content .media.products-wrapper').forEach(product => {
             console.log(product);
         })
         calc();
