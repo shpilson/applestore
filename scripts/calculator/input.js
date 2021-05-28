@@ -37,6 +37,9 @@ function inputCustom() {
     
     const dropdownSelector2 = document.querySelector('.dropdown-menu');
     dropdownSelector2.classList.add('show');
+
+    quantitySelector.insertAdjacentHTML('afterend', `
+    <p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
     }
 
 
