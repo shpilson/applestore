@@ -84,10 +84,8 @@ function inputCustom() {
     };
   
     if (localStorage.getItem('quantity')) {
-        document.querySelectorAll('.cart-content .media.products-wrapper').forEach(product => {
-            console.log(product);
-        })
-        createNewProduct();
+        setProductParam();
+
     }
   }
   
