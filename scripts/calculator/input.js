@@ -37,6 +37,9 @@ function inputCustom() {
     const dropdownSelector2 = document.querySelector('.dropdown-menu');
     dropdownSelector2.classList.add('show');
 
+    const newpriceSelector = document.querySelector(".item-price.mt-3");
+    newpriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
+
     const quantitySelector = document.querySelector("p.item-qty.mt-3");
     quantitySelector.textContent = "Вес: " + localStorage.getItem("quantity") + " кг";
     
