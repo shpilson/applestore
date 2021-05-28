@@ -21,7 +21,6 @@ function inputCustom() {
     let priceJoin = priceCut.split(' ').join('');
     const priceNumber = Number(priceJoin);
 
-    const newButton = document.getElementById('button-cart');
     butt.onclick = function() {
     const val = document.getElementById('quantity').value;
     const summary = val * priceNumber;
