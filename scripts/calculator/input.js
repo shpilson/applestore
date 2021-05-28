@@ -34,6 +34,9 @@ function inputCustom() {
 
     const dropdownSelector = document.querySelector('.dropdown');
     dropdownSelector.classList.add('show');
+    
+    const dropdownSelector2 = document.querySelector('.dropdown-menu');
+    dropdownSelector2.classList.add('show');
     }
 
 
