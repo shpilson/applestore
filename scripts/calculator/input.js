@@ -1,7 +1,14 @@
-import priceNumber from './script.js'; // Базовая цена (строка) -> Число
 function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     const summarySelector = document.querySelector('.product-availability');
+
+    const priceSelector = document.querySelector('.product-price');
+
+    let priceContent = priceSelector.textContent;
+    let priceSplit = priceContent.split('.');
+    let priceCut = priceSplit[0];
+    let priceJoin = priceCut.split(' ').join('');
+    const priceNumber = Number(priceJoin);
 
     inputSelector.insertAdjacentHTML('afterbegin', `    
 <div class="quantity_new">
