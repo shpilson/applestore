@@ -36,9 +36,7 @@ function inputCustom() {
             val, summary, productTitle
         }
 
-        localStorage.setItem('quantity', val);
-      localStorage.setItem('summary', summary);
-      localStorage.setItem('title', productTitle);
+      localStorage.setItem('product', JSON.stringify(product));
   
       document.getElementById('test').innerHTML =
         'Вы хотите купить: ' + localStorage.getItem('quantity') + ' кг';
