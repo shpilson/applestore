@@ -30,7 +30,7 @@ function inputCustom() {
       const val = document.getElementById('quantity').value;
       const productTitle = document.querySelector('.product-title').textContent;
 
-      const summary = val * priceNumber;
+        const summary = val * priceNumber;
         const products = []
         const product = {
             val, summary, productTitle
@@ -39,12 +39,13 @@ function inputCustom() {
       localStorage.setItem('product', JSON.stringify(product));
   
       document.getElementById('test').innerHTML =
-        'Вы хотите купить: ' + localStorage.getItem('quantity') + ' кг';
+        'Вы хотите купить: ' + val + ' кг';
+        
       document.getElementById('test2').innerHTML =
-        'На сумму: ' + localStorage.getItem('summary') + ' руб';
+        'На сумму: ' + summary + ' руб';
   
       const price = document.querySelector('.product-price');
-      price.textContent = localStorage.getItem('summary') + '.00 ₽';
+      price.textContent = summary + '.00 ₽';
   
       const dropdownSelector = document.querySelector('.dropdown');
       dropdownSelector.classList.add('show');
