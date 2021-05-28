@@ -33,4 +33,6 @@ if (pages.main) {
   if (pages.checkout) {
     modalCheckout();
     repeatModal();  
+    priceNumber;
+    inputCustom();
   }
