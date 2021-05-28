@@ -80,14 +80,14 @@ function inputCustom() {
     }
 
     butt.onclick = function () {
-      calc()
+        createNewProduct()
     };
   
     if (localStorage.getItem('quantity')) {
         document.querySelectorAll('.cart-content .media.products-wrapper').forEach(product => {
             console.log(product);
         })
-        calc();
+        createNewProduct();
     }
   }
   
