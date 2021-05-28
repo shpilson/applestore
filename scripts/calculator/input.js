@@ -50,7 +50,7 @@ function inputCustom() {
     
 
 
-    let dropdownSelector = document.querySelector('.dropdown');
+    const dropdownSelector = document.querySelector('.dropdown');
     dropdownSelector.classList.add('show');
     }
 
