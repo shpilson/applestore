@@ -85,7 +85,6 @@ function inputCustom() {
   
     if (localStorage.getItem('quantity')) {
         setProductParam();
-
     }
   }
   
