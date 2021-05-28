@@ -52,8 +52,6 @@ function inputCustom() {
 
     const dropdownSelector = document.querySelector('.dropdown');
     dropdownSelector.classList.add('show');
-    quantitySelector.insertAdjacentHTML('afterend', `
-    <p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
 
     }
 
@@ -63,6 +61,9 @@ function inputCustom() {
     document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
 
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    quantitySelector.insertAdjacentHTML('afterend', `
+    <p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
 
 }
 
