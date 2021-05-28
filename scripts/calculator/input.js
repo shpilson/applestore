@@ -47,30 +47,32 @@ function inputCustom() {
       const price = document.querySelector('.product-price');
       price.textContent = summary + '.00 ₽';
   
+
+      
+      // open cart wrapper
+      
       const dropdownSelector = document.querySelector('.dropdown');
       dropdownSelector.classList.add('show');
   
       const dropdownSelector2 = document.querySelector('.dropdown-menu');
       dropdownSelector2.classList.add('show');
   
+      /* END */
+
+    /* Устанавливаем значения в корзину */
+    const item = JSON.parse(localStorage.getItem("product"))
+
       const newpriceSelector = document.querySelector('.item-price.mt-3');
-      newpriceSelector.textContent = localStorage.getItem('summary') + '.00 ₽';
-  
+      newpriceSelector.textContent = item.summary + '.00 ₽';
+    
       const quantitySelector = document.querySelector('p.item-qty.mt-3');
-      quantitySelector.textContent =
-        'Вес: ' + localStorage.getItem('quantity') + ' кг';
+      quantitySelector.textContent = 'Вес: ' + item.val + ' кг';
   
-      const newSummaryPriceSelector = document.querySelector(
-        '.row.vouchers div .media:nth-child(1) .item-price'
-      );
-      newSummaryPriceSelector.textContent =
-        localStorage.getItem('summary') + '.00 ₽';
+      const newSummaryPriceSelector = document.querySelector('.row.vouchers div .media:nth-child(1) .item-price');
+      newSummaryPriceSelector.textContent = item.summary + '.00 ₽';
   
-      const newTotalPriceSelector = document.querySelector(
-        '.row.vouchers div .media:nth-child(2) .item-price'
-      );
-      newTotalPriceSelector.textContent =
-        localStorage.getItem('summary') + '.00 ₽';
+      const newTotalPriceSelector = document.querySelector('.row.vouchers div .media:nth-child(2) .item-price');
+      newTotalPriceSelector.textContent = item.summary + '.00 ₽';
     }
 
     butt.onclick = function () {
