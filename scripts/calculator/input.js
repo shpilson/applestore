@@ -1,9 +1,8 @@
 import priceNumber from './script.js'; // Базовая цена (строка) -> Число
-
-const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
-const summarySelector = document.querySelector('.product-availability');
-
 function inputCustom() {
+    const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
+    const summarySelector = document.querySelector('.product-availability');
+
     inputSelector.insertAdjacentHTML('afterbegin', `    
 <div class="quantity_new">
 <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
