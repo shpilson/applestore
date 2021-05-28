@@ -36,6 +36,10 @@ function inputCustom() {
     
     const dropdownSelector2 = document.querySelector('.dropdown-menu');
     dropdownSelector2.classList.add('show');
+
+    const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
+    quantitySelector.insertAdjacentHTML('afterend', `
+    <p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
     }
 
 
@@ -44,10 +48,6 @@ function inputCustom() {
     document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
 
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
-
-    const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
-    quantitySelector.insertAdjacentHTML('afterend', `
-    <p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
 }
 
 export default inputCustom;
