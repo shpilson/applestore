@@ -8,8 +8,6 @@ document.querySelector('.header-cart').addEventListener('click', () => {
     console.log('click')
 })
 
-const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
-
 const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
 const summarySelector = document.querySelector('.product-availability');
 
@@ -52,6 +50,9 @@ function inputCustom() {
 
     const dropdownSelector = document.querySelector('.dropdown');
     dropdownSelector.classList.add('show');
+
+    const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
+    console.log(quantitySelector);
 
     }
 
