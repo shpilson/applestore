@@ -55,12 +55,6 @@ function inputCustom() {
 
     }
 
-
-    const price = document.querySelector(".product-price");
-    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
-    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
-
-    price.textContent = localStorage.getItem("summary") + ".00 ₽";
 }
 
 export default inputCustom;
