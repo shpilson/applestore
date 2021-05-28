@@ -66,11 +66,15 @@ function inputCustom() {
       newTotalPriceSelector.textContent =
         localStorage.getItem('summary') + '.00 ₽';
     }
+
     butt.onclick = function () {
       calc()
     };
   
     if (localStorage.getItem('quantity')) {
+        document.querySelectorAll('.cart-content .media.product-wrapper').forEach(product => {
+            console.log(product);
+        })
         calc();
     }
   }
