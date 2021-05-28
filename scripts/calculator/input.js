@@ -2,7 +2,6 @@ import priceNumber from './script.js'; // Базовая цена (строка)
 
 const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
 const summarySelector = document.querySelector('.product-availability');
-const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
 
 function inputCustom() {
     inputSelector.insertAdjacentHTML('afterbegin', `    
@@ -46,6 +45,7 @@ function inputCustom() {
 
     price.textContent = localStorage.getItem("summary") + ".00 ₽";
 
+    const quantitySelector = document.querySelector("#undefined-sticky-wrapper > header > div.header-wrapper > div.container-fluid > div.header_widgets > div.header-cart.sticky > div > div.dropdown.cart_drop_down.show > div > div > div > div > div > div.row.products_row > div > div > div > div.product_details.pr-2.pl-2 > p.item-qty.mt-3");
     quantitySelector.insertAdjacentHTML('afterend', `
     <p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
 }
