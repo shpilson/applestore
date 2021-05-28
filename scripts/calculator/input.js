@@ -38,9 +38,7 @@ function inputCustom() {
     dropdownSelector2.classList.add('show');
 
     const quantitySelector = document.querySelector("p.item-qty.mt-3");
-    quantitySelector.insertAdjacentHTML('afterend', `
-    <p class="item-qty mt-3" id="new_quantity">Вес: </p>`)
-    document.getElementById('new_quantity').innerHTML= localStorage.getItem("quantity") + " кг";
+    quantitySelector.textContent = "Вес: " + localStorage.getItem("quantity") + " кг";
     
     }
 
