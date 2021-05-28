@@ -54,7 +54,6 @@ function inputCustom() {
     newTotalPriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
 
     }
-
 }
 
 export default inputCustom;
