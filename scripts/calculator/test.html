@@ -1,28 +1,100 @@
+1) вводишь кол-во
+2) Клик купить
+3) Товар полетел в корзину
+4) Открылось окно
+5) Отрендерелись добалвенные товары и поменялась цена
+
+
+3) через запросы к бд (но нам это не нужно можем поменять своими способами). 
+Меняешь цену, сохраняешь цену и кол-во в сессии(localStorage || sessianStorage) 
+>меняешь всю эту шляпу в попапе корзины
+
+короче вот эта вся хуйня появляется только после первого клика по кнопке корзины. 
+Чтобы найти тот элемент, что ты записал, нужно:
+1) Навесить слушатель на клик на кнопку купить, после найти элемент и вывести в консоль
+
+там есть сложность с отображением. 
+Оно при загрузки страницы не появляется, а появляется только после и то с задеркжой. 
+Есть крутая структура, как Mutation Observer (может показаться сложным, можно для начала заменить на setTimeout)
+
+для того, чтобы ее менять нужно правильно ее найти
+
+document.querySelector('.header-cart').addEventListener('click', () => {
+    console.log('click')
+})
+
+
+quantitySelector.insertAdjacentHTML('afterend', `
+<p class="item-qty mt-3" id="new_quantity">Вес:</p>`)
+
+/// ver 1.0
+
+function inputCustom() {
+    
+    const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
+    inputSelector.insertAdjacentHTML('afterbegin', `    
+        <div class="quantity_new">
+            <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
+        </div>
+            <input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`)
+
+    const summarySelector = document.querySelector('.product-availability');
+    summarySelector.insertAdjacentHTML('afterend', `
+        <div class="product-availability">
+            <div id="test"></div>
+            <div id="test2"></div>
+        </div>`)
+
+    const priceSelector = document.querySelector('.product-price');
+    let priceContent = priceSelector.textContent;
+    let priceSplit = priceContent.split('.');
+    let priceCut = priceSplit[0];
+    let priceJoin = priceCut.split(' ').join('');
+    const priceNumber = Number(priceJoin);
+
+    butt.onclick = function() {
+    const val = document.getElementById('quantity').value;
+    const summary = val * priceNumber;
+
+    localStorage.setItem("quantity", val);
+    localStorage.setItem("summary", summary);
+
+    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
+    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
+
+    const price = document.querySelector(".product-price");
+    price.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+
+    const dropdownSelector = document.querySelector('.dropdown');
+    dropdownSelector.classList.add('show');
+    
+    const dropdownSelector2 = document.querySelector('.dropdown-menu');
+    dropdownSelector2.classList.add('show');
+
+    const newpriceSelector = document.querySelector(".item-price.mt-3");
+    newpriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    const quantitySelector = document.querySelector("p.item-qty.mt-3");
+    quantitySelector.textContent = "Вес: " + localStorage.getItem("quantity") + " кг";
+    
+    const newSummaryPriceSelector = document.querySelector(".row.vouchers div .media:nth-child(1) .item-price");
+    newSummaryPriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    const newTotalPriceSelector = document.querySelector(".row.vouchers div .media:nth-child(2) .item-price");
+    newTotalPriceSelector.textContent = localStorage.getItem("summary") + ".00 ₽";
+
+    }
+
+
+    const price = document.querySelector(".product-price");
+    document.getElementById('test').innerHTML="Вы хотите купить: " + localStorage.getItem("quantity") + " кг";
+    document.getElementById('test2').innerHTML="На сумму: " + localStorage.getItem("summary") + " руб";
+
+    price.textContent = localStorage.getItem("summary") + ".00 ₽";
+}
+
+export default inputCustom;
 
 
 
-
-
-
-
-
-
-
-<div class="quantity">
-    <button class="btn"><i class="fa fa-minus"></i></button>
-        <input type="number" class="form-control qty" name="quantity" step="0.1" id="quantity">
-    <button class="btn"><i class="fa fa-plus"></i></button>
-</div>
-
-
-<input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>
-
-
-
-
-
-<div class="quantity">
-    <button class="btn"><i class="fa fa-minus"></i></button>
-            <input class="form-control qty" type="number" step="0.01" min="0" name="quantity" value="3" title="Qty">
-    <button class="btn"><i class="fa fa-plus"></i></button>
-</div>
