@@ -43,10 +43,10 @@ function inputCustom() {
           'Вы хотите купить: ' + param.val + ' кг';
           
         document.getElementById('test2').innerHTML =
-          'На сумму: ' + param.summary.toFixed(0) + ' руб';
+          'На сумму: ' + param.summary + ' руб';
     
         const price = document.querySelector('.product-price');
-        price.textContent = param.summary.toFixed(0) + '.00 ₽';
+        price.textContent = param.summary + '.00 ₽';
     }
     
     // Создаем продукт в localStorage
