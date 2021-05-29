@@ -1,3 +1,5 @@
+import setProductParam from './setProductParam.js';
+
 function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
@@ -35,23 +37,7 @@ function inputCustom() {
         const dropdownSelector2 = document.querySelector('.dropdown-menu');
         dropdownSelector2.classList.add('show');
     }
-
-    const setProductParam = () => {
-        const item = JSON.parse(localStorage.getItem("product"))
-  
-        const newpriceSelector = document.querySelector('.item-price.mt-3');
-        newpriceSelector.textContent = item.summary + '.00 ₽';
-      
-        const quantitySelector = document.querySelector('p.item-qty.mt-3');
-        quantitySelector.textContent = 'Вес: ' + item.val + ' кг';
-    
-        const newSummaryPriceSelector = document.querySelector('.row.vouchers div .media:nth-child(1) .item-price');
-        newSummaryPriceSelector.textContent = item.summary + '.00 ₽';
-    
-        const newTotalPriceSelector = document.querySelector('.row.vouchers div .media:nth-child(2) .item-price');
-        newTotalPriceSelector.textContent = item.summary + '.00 ₽';
-      }
-  
+ 
       // Set info product
       const calcNewValue = (param) => {
         document.getElementById('test').innerHTML =
