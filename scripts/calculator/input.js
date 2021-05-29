@@ -52,7 +52,6 @@ function inputCustom() {
     // Создаем продукт в localStorage
     const createNewProduct = () => {
         const val = document.getElementById('quantity').value;
-        const summary = summary.toFixed(0);
         const product = {
             summary: val * priceNumber,
             val,
