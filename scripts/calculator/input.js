@@ -43,7 +43,7 @@ function inputCustom() {
           'Вы хотите купить: ' + param.val + ' кг';
           
         document.getElementById('test2').innerHTML =
-          'На сумму: ' + param.summary.toFixed(1) + ' руб';
+          'На сумму: ' + param.summary.toFixed(0) + ' руб';
     
         const price = document.querySelector('.product-price');
         price.textContent = param.summary + '.00 ₽';
