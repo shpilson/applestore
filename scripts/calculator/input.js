@@ -1,4 +1,4 @@
-import setProductParam from './setProductParam.js';
+import setProductParam from './setProductParam.js'; // подгружаем информацию в попап-корзины
 
 function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
@@ -27,9 +27,8 @@ function inputCustom() {
     let priceCut = priceSplit[0];
     let priceJoin = priceCut.split(' ').join('');
     const priceNumber = Number(priceJoin);
-  
-        
       
+    // Открываем содержимое поп-ап корзины
     const openCartWrapper = () => {
         const dropdownSelector = document.querySelector('.dropdown');
               dropdownSelector.classList.add('show');
@@ -38,8 +37,8 @@ function inputCustom() {
         dropdownSelector2.classList.add('show');
     }
  
-      // Set info product
-      const calcNewValue = (param) => {
+    // Выводим для пользователя подсчеты на странице продукта
+    const calcNewValue = (param) => {
         document.getElementById('test').innerHTML =
           'Вы хотите купить: ' + param.val + ' кг';
           
@@ -50,6 +49,7 @@ function inputCustom() {
         price.textContent = param.summary + '.00 ₽';
     }
     
+    // Создаем продукт в localStorage
     const createNewProduct = () => {
         const val = document.getElementById('quantity').value;
         const product = {
