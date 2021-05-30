@@ -53,13 +53,15 @@ function inputCustom() {
 // если есть в локале val, то суммируй с текущим значением полученным из инпута
  /* v - значение из ипута */
     const hasProdValue = (v) => {
-      if (JSON.parse(localStorage.getItem('product'))) {
-        console.log(v);
-        // v — заничение полученное из инпута
-        // v2 - значение в локале
+      const product = JSON.parse(localStorage.getItem('product'));
+      console.log(product);
+      // if () {  
+      //   return v + 
+      //   // v — заничение полученное из инпута
+      //   // v2 - значение в локале
 
-        // func -> v + v2
-      }
+      //   // func -> v + v2
+      // }
     }
     
 
