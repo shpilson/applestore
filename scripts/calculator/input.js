@@ -61,10 +61,10 @@ function inputCustom() {
     3) Обновить значения во враппере корзины
 */
  
-    const hasProdValue = (v) => {
+    const hasProdValue = (newValue) => {
 
       const product = JSON.parse(localStorage.getItem('product'));
-      const input = +(+v).toFixed(2);
+      const input = +(+newValue).toFixed(2);
         if (product.val !== null) {
             const sum = input + +product.val;
             return +sum.toFixed(2);
