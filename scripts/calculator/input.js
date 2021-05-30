@@ -55,7 +55,7 @@ function inputCustom() {
 // если есть в локале val, то суммируй с текущим значением полученным из инпута
  /* v - значение из ипута */
     const hasProdValue = (v) => {
-        if (!v) {
+        if (!product.val) {
       const product = JSON.parse(localStorage.getItem('product'));
 
       const input = +(+v).toFixed(2);
