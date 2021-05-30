@@ -111,6 +111,7 @@ function inputCustom() {
         removeButton.onclick = function() {
         localStorage.removeItem('product');
         document.getElementById('test').innerHTML = 'Вы удалили товар из корзины';
+        document.getElementById('test2').innerHTML = '';
         }  
     }   
 
