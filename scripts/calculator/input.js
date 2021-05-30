@@ -82,9 +82,10 @@ function inputCustom() {
           productTitle: document.querySelector('.product-title').textContent
       }
 
+      hasProdValue(val);
+
       localStorage.setItem('product', JSON.stringify(product));
       
-      hasProdValue(val);
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
