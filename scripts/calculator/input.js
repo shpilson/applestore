@@ -49,10 +49,25 @@ function inputCustom() {
         } else console.log('Весовой товар неопределён')
     }
 
+// hasProdValue - проверяет существование веса в локале
+// если есть в локале val, то суммируй с текущим значением полученным из инпута
+ /* v - значение из ипута */
     const hasProdValue = (v) => {
-      if ()
+      if (localStorage.getItem('product')) {
+        // v — заничение полученное из инпута
+        // v2 - значение в локале
+
+        // func -> v + v2
+      }
     }
     
+
+/*
+    1) Проверить есть ли значение в localStorage
+    2) Суммировать значения и записать в localStorage
+    3) Обновить значения во враппере корзины
+*/
+
     // Создаем продукт в localStorage
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
