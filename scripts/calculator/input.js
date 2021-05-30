@@ -60,8 +60,8 @@ function inputCustom() {
       localStorage.setItem('product', JSON.stringify(product));
         
       openCartWrapper();
-      calcNewValue(product);
       setProductParam();
+      calcNewValue(product);
     }
 
     const buyButton = document.querySelector('.buttons .btn-cart');
