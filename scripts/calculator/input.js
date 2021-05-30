@@ -37,6 +37,7 @@ function inputCustom() {
  
     // Выводим для пользователя подсчеты на странице продукта
     const calcNewValue = (param) => {
+        console.log(param);
         document.getElementById('test').innerHTML =
           'Вы хотите купить: ' + param.val + ' кг';
           
@@ -71,8 +72,8 @@ function inputCustom() {
     };
   
     if (localStorage.getItem('product')) {
-        setProductParam();    
-        calcNewValue(product);
+        setProductParam();
+        calcNewValue();
     }
   }
   
