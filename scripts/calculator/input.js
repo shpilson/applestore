@@ -105,9 +105,9 @@ function inputCustom() {
         setProductParam();
     }
 
-    
-    const removeButton = document.querySelector('.remove-button-wrapper');
+    // Ищешь кнопку удаления, когда нет товара во врапере. От сюда и ошибка
     if (localStorage.getItem('product') !== null) {
+    const removeButton = document.querySelector('.remove-button-wrapper');
         removeButton.onclick = function() {
         localStorage.removeItem('product');
         }  
