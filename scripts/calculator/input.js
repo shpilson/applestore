@@ -73,7 +73,6 @@ function inputCustom() {
         setProductParam();
     }
 
-    createNewProduct();
   }
   
   export default inputCustom;
