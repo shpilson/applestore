@@ -112,6 +112,13 @@ function inputCustom() {
         setProductParam();
     }
 
+    const removeProduct = () => {
+        const removeButton = document.querySelector('.remove-button-wrapper');
+        removeButton.onclick = function () {
+            localStorage.clear;
+        }
+    }
+
   }
   
   export default inputCustom;
