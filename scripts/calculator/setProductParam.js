@@ -2,6 +2,8 @@ function setProductParam() {
     const item = JSON.parse(localStorage.getItem("product"))
 
     const newpriceSelector = document.querySelector('.item-price.mt-3');
+    console.log(newpriceSelector);
+
     if (newpriceSelector){
     newpriceSelector.textContent = item.summary.toFixed(0) + '.00 ₽';
   
