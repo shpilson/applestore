@@ -65,7 +65,9 @@ function inputCustom() {
 
     const buyButton = document.querySelector('.buttons .btn-cart');
     buyButton.onclick = function () {
+      setTimeout(() => {
         createNewProduct()
+      }, 600)
     };
   
     if (localStorage.getItem('product')) {
