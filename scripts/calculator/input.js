@@ -54,9 +54,11 @@ function inputCustom() {
  /* v - значение из ипута */
     const hasProdValue = (v) => {
       const product = JSON.parse(localStorage.getItem('product'));
-      const input = +(+v).toFixed(2)
+
+      const input = +(+v).toFixed(2);
       const sum = input + +product.val;
-      console.log(+sum.toFixed(2));
+
+      return +sum.toFixed(2);
       // if () {  
       //   return v + 
       //   // v — заничение полученное из инпута
@@ -78,7 +80,7 @@ function inputCustom() {
       const val = document.getElementById('quantity').value;
       const product = {
           summary: (val * priceNumber).toFixed(0),
-          val,
+          val: hasProdValue(val), // val = number
           productTitle: document.querySelector('.product-title').textContent
       }
 
