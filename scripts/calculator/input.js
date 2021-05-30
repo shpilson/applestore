@@ -103,12 +103,6 @@ function inputCustom() {
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
-        const removeButton = document.querySelector('.remove-button-wrapper');
-        removeButton.onclick = function() {
-        localStorage.removeItem('product');
-        document.getElementById('test').style.display = 'none';
-        document.getElementById('test2').style.display = 'none';
-        }  
     }
 
     // Ищешь кнопку удаления, когда нет товара во врапере. От сюда и ошибка
