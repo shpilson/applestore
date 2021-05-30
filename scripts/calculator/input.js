@@ -37,7 +37,6 @@ function inputCustom() {
  
     // Выводим для пользователя подсчеты на странице продукта
     const calcNewValue = (param) => {
-        console.log(param);
         document.getElementById('test').innerHTML =
           'Вы хотите купить: ' + param.val + ' кг';
           
@@ -57,8 +56,6 @@ function inputCustom() {
           productTitle: document.querySelector('.product-title').textContent
       }
 
-      console.log(product)
-
       localStorage.setItem('product', JSON.stringify(product));
         
       openCartWrapper();
@@ -74,7 +71,8 @@ function inputCustom() {
             createNewProduct()
           }, 1000)
         };
-        createNewProduct();
+        calcNewValue(localStorage.setItem('product', JSON.stringify(product)))
+        setProductParam();
     }
   }
   
