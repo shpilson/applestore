@@ -39,7 +39,7 @@ function inputCustom() {
     const calcNewValue = (param) => {
         if (param) {
         document.getElementById('test').innerHTML =
-          'Вы хотите купить: ' + param.val + ' кг';
+          'У Вас в корзине уже: ' + param.val + ' кг';
           
         document.getElementById('test2').innerHTML =
           'На сумму: ' + param.summary + ' руб';
