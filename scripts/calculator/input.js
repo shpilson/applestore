@@ -71,7 +71,6 @@ function inputCustom() {
   
     if (localStorage.getItem('product')) {
         setProductParam();
-        calcNewValue(product);
     }
 
   }
