@@ -68,7 +68,7 @@ function inputCustom() {
       const sum = input + +product.val;
       return +sum.toFixed(2);
             } else {
-                return +v;
+                return console.log('Какая-то ерунда');
         }
     }
 
