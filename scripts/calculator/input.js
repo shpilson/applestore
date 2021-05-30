@@ -73,7 +73,6 @@ function inputCustom() {
         setProductParam();
     }
 
-    calcNewValue();
   }
   
   export default inputCustom;
