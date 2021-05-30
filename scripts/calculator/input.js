@@ -106,14 +106,12 @@ function inputCustom() {
     }
 
     
-        const removeButton = () => {
-        document.querySelector('.remove-button-wrapper');
-        if (localStorage.getItem('product') !== null) {
+    const removeButton = document.querySelector('.remove-button-wrapper');
+    if (localStorage.getItem('product') !== null) {
         removeButton.onclick = function() {
         localStorage.removeItem('product');
-            }  
-        } 
-    }  
+        }  
+    }   
 
   }
   
