@@ -37,7 +37,7 @@ function inputCustom() {
  
     // Выводим для пользователя подсчеты на странице продукта
     const calcNewValue = (param) => {
-      console.log(param);
+        if (!param) {
         document.getElementById('test').innerHTML =
           'Вы хотите купить: ' + param.val + ' кг';
           
@@ -46,6 +46,7 @@ function inputCustom() {
     
         const price = document.querySelector('.product-price');
         price.textContent = param.summary.toFixed(0) + '.00 ₽';
+        }
     }
     
     // Создаем продукт в localStorage
@@ -72,7 +73,7 @@ function inputCustom() {
             createNewProduct()
           }, 1000)
         };
-        calcNewValue(JSON.parse(localStorage.getItem('product')))
+        calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
     }
   }
