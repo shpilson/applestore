@@ -113,8 +113,8 @@ function inputCustom() {
         localStorage.clear();
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
+        }
     }
-
   }
   
   export default inputCustom;
