@@ -71,7 +71,6 @@ function inputCustom() {
                 return +v;
         }
     }
-    
 
     // Создаем продукт в localStorage
     const createNewProduct = () => {
