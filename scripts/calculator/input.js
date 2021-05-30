@@ -57,6 +57,8 @@ function inputCustom() {
             productTitle: document.querySelector('.product-title').textContent
         }
 
+        console.log(product)
+
       localStorage.setItem('product', JSON.stringify(product));
         
       openCartWrapper();
