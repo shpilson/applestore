@@ -7,8 +7,7 @@ function inputCustom() {
       `    
           <div class="quantity_new">
               <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
-          </div>
-          <button class="btn btn-theme btn-cart btn-icon-left " id="button-cart" data-loading-text="Загрузка..."><i class="far fa-shopping-cart"></i>Купить</button>`
+          </div>`
     );
   
     const summarySelector = document.querySelector('.product-availability');
