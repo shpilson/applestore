@@ -48,12 +48,16 @@ function inputCustom() {
         price.textContent = param.summary.toFixed(0) + '.00 ₽';
         } else console.log('Весовой товар неопределён')
     }
+
+    const hasProdValue = (v) => {
+      if ()
+    }
     
     // Создаем продукт в localStorage
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
       const product = {
-          summary: val * priceNumber,
+          summary: (val * priceNumber).toFixed(0),
           val,
           productTitle: document.querySelector('.product-title').textContent
       }
