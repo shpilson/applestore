@@ -105,10 +105,10 @@ function inputCustom() {
         setProductParam();
     }
 
-    if (localStorage.getItem('product')) {
+    if (localStorage.getItem('product') !== null) {
         const removeButton = document.querySelector(".remove-button-wrapper");
         removeButton.onclick = function() {
-        localStorage.clear();
+        localStorage.removeItem('product');
         } 
     }   else {
         console.log("В хранилище ничего нет");
