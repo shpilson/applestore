@@ -8,7 +8,7 @@ function inputCustom() {
           <div class="quantity_new">
               <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
           </div>
-              <input class="btn btn-theme btn-cart btn-icon-left" id="butt" type="button" value="Взвесить"/>`
+              <input class="btn btn-theme btn-cart btn-icon-left" id="button-cart" type="button" value="Взвесить"/>`
     );
   
     const summarySelector = document.querySelector('.product-availability');
