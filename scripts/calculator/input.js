@@ -44,7 +44,8 @@ function inputCustom() {
         document.getElementById('test2').innerHTML =
           'На сумму: ' + param.summary + ' руб';
     
-
+        const price = document.querySelector('.product-price');
+        price.textContent = ' / кг';
         } else {
           console.log('Весовой товар неопределён')
         }
