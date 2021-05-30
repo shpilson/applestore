@@ -46,7 +46,7 @@ function inputCustom() {
     
         const price = document.querySelector('.product-price');
         price.textContent = param.summary.toFixed(0) + '.00 ₽';
-        }
+        } else console.log('Весовой товар неопределён')
     }
     
     // Создаем продукт в localStorage
