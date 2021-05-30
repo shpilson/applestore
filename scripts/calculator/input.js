@@ -67,7 +67,7 @@ function inputCustom() {
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
-      }, 600)
+      }, 1000)
     };
   
     if (localStorage.getItem('product')) {
