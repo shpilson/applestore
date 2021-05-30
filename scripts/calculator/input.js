@@ -65,7 +65,8 @@ function inputCustom() {
       setProductParam();
     }
 
-    butt.onclick = function () {
+    const buyButton = document.getElementById('button-cart');
+    buyButton.onclick = function () {
         createNewProduct()
     };
   
