@@ -96,7 +96,7 @@ function inputCustom() {
     }
     
 
-            const buyButton = document.querySelector('.buttons .btn-cart');
+    const buyButton = document.querySelector('.buttons .btn-cart');
         buyButton.onclick = function () {
           setTimeout(() => {
             createNewProduct()
