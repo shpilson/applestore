@@ -71,7 +71,7 @@ function inputCustom() {
             createNewProduct()
           }, 1000)
         };
-        calcNewValue(localStorage.setItem('product', JSON.stringify(product)))
+        calcNewValue(localStorage.setItem('product', JSON.parse(product)))
         setProductParam();
     }
   }
