@@ -116,7 +116,7 @@ function inputCustom() {
         if (localStorage.getItem('product') !== null) {
         const removeButton = document.querySelector('.remove-button-wrapper');
         removeButton.onclick = function () {
-            localStorage.clear;
+            localStorage.clear('product');
             }
         }
 
