@@ -4,7 +4,7 @@ function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
       'afterbegin',
-      `   <div class="quantity_new">
+      `<div class="quantity_new">
               <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
           </div>`
     );
@@ -44,9 +44,10 @@ function inputCustom() {
         document.getElementById('test2').innerHTML =
           'На сумму: ' + param.summary + ' руб';
     
-        const price = document.querySelector('.product-price');
-        price.textContent = param.summary + '.00 ₽';
-        } else console.log('Весовой товар неопределён')
+
+        } else {
+          console.log('Весовой товар неопределён')
+        }
     }
 
 // hasProdValue - проверяет существование веса в локале
