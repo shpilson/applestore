@@ -54,17 +54,19 @@ function inputCustom() {
 // hasProdValue - проверяет существование веса в локале
 // если есть в локале val, то суммируй с текущим значением полученным из инпута
  /* v - значение из ипута */
+ 
+    const product = JSON.parse(localStorage.getItem('product'));
     const hasProdValue = (v) => {
-        if (+product.val !== null) {
-      const product = JSON.parse(localStorage.getItem('product'));
+        if (!product) {
 
       const input = +(+v).toFixed(2);
       const sum = input + +product.val;
 
       return +sum.toFixed(2);
-        } else {
-            console.log('Нет прошлого значения');
-        }
+    } else {
+        console.log('localStorage пуст')
+    }
+
       // if () {  
       //   return v + 
       //   // v — заничение полученное из инпута
