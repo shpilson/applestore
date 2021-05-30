@@ -37,7 +37,7 @@ function inputCustom() {
  
     // Выводим для пользователя подсчеты на странице продукта
     const calcNewValue = (param) => {
-        if (!param) {
+        if (param) {
         document.getElementById('test').innerHTML =
           'Вы хотите купить: ' + param.val + ' кг';
           
