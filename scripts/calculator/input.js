@@ -101,11 +101,12 @@ function inputCustom() {
     }
     
 
+    const buyButton = document.querySelector('.buttons .btn-cart');
     buyButton.onclick = function () {
-        setTimeout(() => {
-          createNewProduct()
-        }, 1000)
-      };
+      setTimeout(() => {
+        createNewProduct()
+      }, 1000)
+    };
 
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
