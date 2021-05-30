@@ -110,8 +110,8 @@ function inputCustom() {
     const removeButton = document.querySelector('.remove-button-wrapper');
         removeButton.onclick = function() {
         localStorage.removeItem('product');
-        document.getElementById('test').innerHTML = 'Вы удалили товар из корзины';
-        document.getElementById('test2').innerHTML = '';
+        document.getElementById('test').style.display = 'none';
+        document.getElementById('test2').style.display = 'none';
         }  
     }   
 
