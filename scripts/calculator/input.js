@@ -54,7 +54,7 @@ function inputCustom() {
  /* v - значение из ипута */
     const hasProdValue = (v) => {
       const product = JSON.parse(localStorage.getItem('product'));
-      console.log(v + product.val);
+      console.log(+v + +product.val);
       // if () {  
       //   return v + 
       //   // v — заничение полученное из инпута
