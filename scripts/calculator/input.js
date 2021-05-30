@@ -106,12 +106,6 @@ function inputCustom() {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
     }
-
-    const removeButton = document.querySelector('.remove-button-wrapper');
-    removeButton.onclick = function () {
-        localStorage.clear();
-        }
-
   }
   
   export default inputCustom;
