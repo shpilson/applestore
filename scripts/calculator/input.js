@@ -61,9 +61,9 @@ function inputCustom() {
       const input = +(+v).toFixed(2);
       const sum = input + +product.val;
       return +sum.toFixed(2);
-      
+
     } else {
-        console.log('localStorage пуст')
+        console.log('localStorage пуст');
     }
 
       // if () {  
