@@ -53,7 +53,8 @@ function inputCustom() {
 // если есть в локале val, то суммируй с текущим значением полученным из инпута
  /* v - значение из ипута */
     const hasProdValue = (v) => {
-      if (localStorage.getItem('product')) {
+      if (JSON.parse(localStorage.getItem('product'))) {
+        console.log(v);
         // v — заничение полученное из инпута
         // v2 - значение в локале
 
@@ -78,7 +79,8 @@ function inputCustom() {
       }
 
       localStorage.setItem('product', JSON.stringify(product));
-        
+      
+      hasProdValue(val);
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
