@@ -106,6 +106,7 @@ function inputCustom() {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
     }
+
   }
   
   export default inputCustom;
@@ -115,5 +116,6 @@ function inputCustom() {
   // [DONE ]С тебя калькуляция в попап корзине (прибавлять новое, не обнуляя старое)
 
   // На /checkout в строку продукта в правой колонке, к строке Яблоки на развес добавить на новую строку Вес: N кг 
+  
   // В корзине всегда будет массив, ты должен получить все элементы в виде массива и к 
   // этим элементам применять ранее напианный код
