@@ -4,8 +4,7 @@ function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
       'afterbegin',
-      `    
-          <div class="quantity_new">
+      `   <div class="quantity_new">
               <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
           </div>`
     );
