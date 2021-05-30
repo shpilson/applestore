@@ -95,15 +95,14 @@ function inputCustom() {
       calcNewValue(product);
     }
     
-  
+    const buyButton = document.querySelector('.buttons .btn-cart');
     if (localStorage.getItem('product')) {
-        const buyButton = document.querySelector('.buttons .btn-cart');
         buyButton.onclick = function () {
           setTimeout(() => {
             createNewProduct()
           }, 1000)
         };
-        calcNewValue(JSON.parse(localStorage.getItem('product')))
+        calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
     }
 
