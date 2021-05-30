@@ -55,9 +55,6 @@ function inputCustom() {
 // если есть в локале val, то суммируй с текущим значением полученным из инпута
  /* v - значение из ипута */
     const hasProdValue = (v) => {
-        if (product == 0) {
-            console.log("Нет предыдущего значения")
-        }
       const product = JSON.parse(localStorage.getItem('product'));
 
       const input = +(+v).toFixed(2);
@@ -99,12 +96,12 @@ function inputCustom() {
     }
     
 
-    const buyButton = document.querySelector('.buttons .btn-cart');
-    buyButton.onclick = function () {
-      setTimeout(() => {
-        createNewProduct()
-      }, 1000)
-    };
+            const buyButton = document.querySelector('.buttons .btn-cart');
+        buyButton.onclick = function () {
+          setTimeout(() => {
+            createNewProduct()
+          }, 1000)
+        };
 
     if (localStorage.getItem('product')) {
 
