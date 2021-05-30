@@ -62,6 +62,8 @@ function inputCustom() {
       const sum = input + +product.val;
 
       return +sum.toFixed(2);
+        } else {
+            console.log('Нет прошлого значения');
         }
       // if () {  
       //   return v + 
