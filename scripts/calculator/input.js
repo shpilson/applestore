@@ -54,6 +54,12 @@ function inputCustom() {
 // hasProdValue - проверяет существование веса в локале
 // если есть в локале val, то суммируй с текущим значением полученным из инпута
  /* v - значение из ипута */
+
+ /*
+    1) Проверить есть ли значение в localStorage
+    2) Суммировать значения и записать в localStorage
+    3) Обновить значения во враппере корзины
+*/
  
     const hasProdValue = (v) => {
         if (+v !== null) {
@@ -61,26 +67,11 @@ function inputCustom() {
       const input = +(+v).toFixed(2);
       const sum = input + +product.val;
       return +sum.toFixed(2);
-
-    } else {
-        return +v;
-    }
-
-      // if () {  
-      //   return v + 
-      //   // v — заничение полученное из инпута
-      //   // v2 - значение в локале
-
-      //   // func -> v + v2
-      // }
+            } else {
+                return +v;
+        }
     }
     
-
-/*
-    1) Проверить есть ли значение в localStorage
-    2) Суммировать значения и записать в localStorage
-    3) Обновить значения во враппере корзины
-*/
 
     // Создаем продукт в localStorage
     const createNewProduct = () => {
