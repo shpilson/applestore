@@ -81,7 +81,7 @@ function inputCustom() {
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
       const product = {
-          summary: (val * priceNumber).toFixed(0),
+          summary: (hasProdValue(val) * priceNumber).toFixed(0),
           val: hasProdValue(val), // val = number
           productTitle: document.querySelector('.product-title').textContent
       }
