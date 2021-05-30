@@ -109,6 +109,8 @@ function inputCustom() {
         const removeButton = document.querySelector(".remove-button-wrapper");
         removeButton.onclick = function() {
         localStorage.removeItem('product');
+        } else {
+            console.log("В хранилище ничего нет")
         }
     }
 
