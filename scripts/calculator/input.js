@@ -56,7 +56,8 @@ function inputCustom() {
       const product = JSON.parse(localStorage.getItem('product'));
       console.log('V', +v)
       console.log('Prod val', +product.val)
-      console.log(+v + +product.val);
+      const sum = +v + +product.val;
+      console.log(+sum.toFixed(2));
       // if () {  
       //   return v + 
       //   // v — заничение полученное из инпута
