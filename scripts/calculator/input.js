@@ -92,7 +92,6 @@ function inputCustom() {
       setProductParam();
       calcNewValue(product);
     }
-    
 
     const buyButton = document.querySelector('.buttons .btn-cart');
     buyButton.onclick = function () {
@@ -104,6 +103,13 @@ function inputCustom() {
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
+    }
+
+    if (localStorage.getItem('product') !== null) {
+        const removeButton = document.querySelector(".remove-button-wrapper");
+        removeButton.onclick = function() {
+            localStorage.removeItem("product");
+        }
     }
 
   }
