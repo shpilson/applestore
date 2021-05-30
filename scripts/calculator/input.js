@@ -65,13 +65,14 @@ function inputCustom() {
       setProductParam();
     }
 
-    const buyButton = document.getElementById('button-cart');
+    const buyButton = document.querySelector('button-cart');
     buyButton.onclick = function () {
         createNewProduct()
     };
   
     if (localStorage.getItem('product')) {
         setProductParam();
+        
     }
 
   }
