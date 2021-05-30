@@ -50,14 +50,14 @@ function inputCustom() {
     
     // Создаем продукт в localStorage
     const createNewProduct = () => {
-        const val = document.getElementById('quantity').value;
-        const product = {
-            summary: val * priceNumber,
-            val,
-            productTitle: document.querySelector('.product-title').textContent
-        }
+      const val = document.getElementById('quantity').value;
+      const product = {
+          summary: val * priceNumber,
+          val,
+          productTitle: document.querySelector('.product-title').textContent
+      }
 
-        console.log(product)
+      console.log(product)
 
       localStorage.setItem('product', JSON.stringify(product));
         
@@ -65,17 +65,16 @@ function inputCustom() {
       setProductParam();
       calcNewValue(product);
     }
-
-    const buyButton = document.querySelector('.buttons .btn-cart');
-    buyButton.onclick = function () {
-      setTimeout(() => {
-        createNewProduct()
-      }, 1000)
-    };
+    
   
     if (localStorage.getItem('product')) {
-        setProductParam();
-        calcNewValue();
+        const buyButton = document.querySelector('.buttons .btn-cart');
+        buyButton.onclick = function () {
+          setTimeout(() => {
+            createNewProduct()
+          }, 1000)
+        };
+        createNewProduct();
     }
   }
   
