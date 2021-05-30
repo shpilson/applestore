@@ -75,6 +75,17 @@ function inputCustom() {
 
     }
 
+
+    const removeButton = () => { document.querySelector('.remove-button-wrapper');
+    if (localStorage.getItem('product') !== null) {
+        removeButton.onclick = function() {
+        localStorage.removeItem('product');
+        document.getElementById('test').style.display = 'none';
+        document.getElementById('test2').style.display = 'none';
+        }  
+    }   
+    }
+
     // Создаем продукт в localStorage
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
@@ -91,6 +102,7 @@ function inputCustom() {
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
+      removeButton();
     }
 
     const buyButton = document.querySelector('.buttons .btn-cart');
@@ -105,16 +117,6 @@ function inputCustom() {
         setProductParam();
     }
 
-
-
-    const removeButton = document.querySelector('.remove-button-wrapper');
-    if (localStorage.getItem('product') !== null && removeButton) {
-        removeButton.onclick = function() {
-        localStorage.removeItem('product');
-        document.getElementById('test').style.display = 'none';
-        document.getElementById('test2').style.display = 'none';
-        }  
-    }   
 
   }
   
