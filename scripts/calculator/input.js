@@ -103,7 +103,7 @@ function inputCustom() {
             createNewProduct()
           }, 1000)
         };
-        calcNewValue(JSON.parse(localStorage.getItem('product')));
+        calcNewValue(JSON.parse(localStorage.getItem('product')))
         setProductParam();
     }
 
