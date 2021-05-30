@@ -112,16 +112,13 @@ function inputCustom() {
         setProductParam();
     }
 
-    const removeProduct = () => {
-        if (localStorage.getItem('product')) {
+
+        if (localStorage.getItem('product') !== null) {
         const removeButton = document.querySelector('.remove-button-wrapper');
         removeButton.onclick = function () {
             localStorage.clear;
             }
-        } else {
-            console.log('В корзине ничего нет')
         }
-    }
 
   }
   
