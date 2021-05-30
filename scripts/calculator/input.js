@@ -71,10 +71,9 @@ function inputCustom() {
     };
   
     if (localStorage.getItem('product')) {
-        setProductParam();
-        
+        setProductParam();    
+        calcNewValue();
     }
-
   }
   
   export default inputCustom;
