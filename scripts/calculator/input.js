@@ -91,7 +91,7 @@ function inputCustom() {
     }
     
 
-    if (localStorage.getItem('product') == null) {
+    if (localStorage.getItem('product')) {
         const buyButton = document.querySelector('.buttons .btn-cart');
         buyButton.onclick = function () {
           setTimeout(() => {
