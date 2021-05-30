@@ -110,6 +110,7 @@ function inputCustom() {
     const removeButton = document.querySelector('.remove-button-wrapper');
         removeButton.onclick = function() {
         localStorage.removeItem('product');
+        calcNewValue() = 0;
         }  
     }   
 
