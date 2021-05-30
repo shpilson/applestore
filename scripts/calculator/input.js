@@ -62,14 +62,17 @@ function inputCustom() {
 */
  
     const hasProdValue = (v) => {
-        if (+v !== null) {
+
       const product = JSON.parse(localStorage.getItem('product'));
       const input = +(+v).toFixed(2);
-      const sum = input + +product.val;
-      return +sum.toFixed(2);
-            } else {
-                return +v;
+        if (product.val !== null) {
+            const sum = input + +product.val;
+            return +sum.toFixed(2);
         }
+      else {
+          return input;
+        }
+
     }
 
     // Создаем продукт в localStorage
