@@ -102,8 +102,6 @@ function inputCustom() {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
     }
-
-
   }
   
   export default inputCustom;
