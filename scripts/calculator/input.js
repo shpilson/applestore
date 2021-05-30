@@ -57,7 +57,7 @@ function inputCustom() {
     const hasProdValue = (v) => {
         if (product.val == 0) {
             console.log("Нет предыдущего значения")
-        }
+        } else
       const product = JSON.parse(localStorage.getItem('product'));
 
       const input = +(+v).toFixed(2);
