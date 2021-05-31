@@ -4,7 +4,7 @@ function checkoutChange() {
 
     setTimeout(() => {
         const totalTableSum = document.querySelector('.total_table__sum');
-        console.log(totalTableSum);
+        totalTableSum.textContent = product.summary + ".00₽";
       }, 1000)
     }
 
