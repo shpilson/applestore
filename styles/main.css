@@ -468,7 +468,7 @@ body.theme-green-1 .top-bar ul a span.colored, body.theme-green-1 a {
   color: #000;
 }
 
-/* Убираем +/- */
+/* Убираем +/- на главной странице после добавления товара в корзину */
 
 body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .add_to_cart .buttons_added.quantity i, body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .more_details_btn_wrapper .buttons_added.quantity i {
   padding: 12px;
