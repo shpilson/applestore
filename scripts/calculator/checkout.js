@@ -1,9 +1,12 @@
 function checkoutChange() {
     const product = JSON.parse(localStorage.getItem('product'));
-    
+
     setTimeout(() => {
         const totalTableSum = document.querySelector('.total_table__sum');
         totalTableSum.textContent = product.summary + ".00₽";
+
+        const rightPrice = document.querySelector('.text-right');
+        rightPrice.textContent = product.summary + ".00₽";
       }, 1000)
     }
 
