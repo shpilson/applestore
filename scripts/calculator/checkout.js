@@ -22,7 +22,7 @@ function checkoutChange() {
         'Вес: ' + product.val + ' кг';
 
 
-      }, 1000)
+      }, 500)
     }
 
 
