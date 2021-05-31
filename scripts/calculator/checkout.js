@@ -15,7 +15,7 @@ function checkoutChange() {
         // Добавляем значение веса
         const itemWeight = document.querySelector(".product__description span");
         itemWeight.insertAdjacentHTML(
-            'afterend', `<span id="newWeight"></span>`
+            'afterend', `<div id="newWeight"></div>`
         );
 
         document.getElementById('newWeight').innerHTML =
