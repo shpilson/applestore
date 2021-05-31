@@ -35,7 +35,7 @@ if (pages.main) {
   }
 
   if (pages.checkout) {
+    checkoutChange();
     modalCheckout();
     repeatModal();
-    checkoutChange();
   }

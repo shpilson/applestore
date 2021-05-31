@@ -7,6 +7,7 @@ function checkoutChange() {
 
     const totalTableSum = document.querySelector('.total_table__sum');
     console.log(totalTableSum);
-}
+    }
+
 
 export default checkoutChange;
