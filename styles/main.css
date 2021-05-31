@@ -458,6 +458,10 @@ transition: all .3s ease;
 
 }
 
-body.theme-green-1 .top-bar ul a:hover .fa, body.theme-green-1 .top-bar ul a span.colored, body.theme-green-1 a {
+body.theme-green-1 .top-bar ul a:hover .fa {
   color: #00b16a !important;
+}
+
+body.theme-green-1 .top-bar ul a span.colored, body.theme-green-1 a {
+  color: #000;
 }
