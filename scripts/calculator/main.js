@@ -3,7 +3,7 @@ function changeButton () {
     button.insertAdjacentHTML(
         'afterbegin',
         `
-                <span>Товар в корзине</span>
+                <span>Товар уже в корзине</span>
         `
       );
 }
