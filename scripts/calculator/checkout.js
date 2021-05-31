@@ -7,6 +7,10 @@ function checkoutChange() {
 
         const rightPrice = document.querySelector('.text-right');
         rightPrice.textContent = product.summary + ".00₽";
+
+        const singlePrice = document.querySelector('.single-price div');
+        singlePrice = product.summary + ".00₽";
+
       }, 1000)
     }
 
