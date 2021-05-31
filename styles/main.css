@@ -458,6 +458,8 @@ transition: all .3s ease;
 
 }
 
+/* Подсвечиваем ссылки */
+
 body.theme-green-1 .top-bar ul a:hover .fa {
   color: #00b16a !important;
 }
