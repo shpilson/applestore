@@ -1,6 +1,11 @@
 function changeButton () {
     const button = document.querySelector('.buttons_added');
-    console.log(button);
+    button.insertAdjacentHTML(
+        'afterend',
+        `
+                <span>Товар в корзине</span>
+        `
+      );
 }
 
 export default changeButton;
