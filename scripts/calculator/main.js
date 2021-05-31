@@ -1,7 +1,7 @@
 function changeButton () {
     const button = document.querySelector('.buttons_added');
     button.insertAdjacentHTML(
-        'afterend',
+        'afterbegin',
         `
                 <span>Товар в корзине</span>
         `
