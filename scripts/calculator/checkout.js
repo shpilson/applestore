@@ -1,5 +1,5 @@
-const itemPriceSelector = document.querySelector('.text-right');
-
+$(document).ready(function ()  
+{
 function checkoutChange() {
     const product = JSON.parse(localStorage.getItem('product'));
     console.log(itemPriceSelector);
@@ -8,5 +8,5 @@ function checkoutChange() {
     console.log(totalTableSum);
     }
 
-
-export default checkoutChange;
+    export default checkoutChange;
+});
