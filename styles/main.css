@@ -474,3 +474,9 @@ body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .pr
   padding: 12px;
   display: none;
 }
+
+/* Скрываем лишнее из кнопки после добавления в корзину */
+
+body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .add_to_cart .buttons_added.quantity input.quantity_field, body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .more_details_btn_wrapper .buttons_added.quantity input.quantity_field {
+  display: none;
+}
