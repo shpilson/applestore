@@ -19,7 +19,7 @@ function checkoutChange() {
         );
 
         document.getElementById('newWeight').innerHTML =
-        'Вы положили в корзину: ' + product.val + ' кг';
+        'Вес: ' + product.val + ' кг';
 
 
       }, 1000)
