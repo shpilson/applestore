@@ -480,3 +480,10 @@ body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .pr
 body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .add_to_cart .buttons_added.quantity input.quantity_field, body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .more_details_btn_wrapper .buttons_added.quantity input.quantity_field {
   display: none;
 }
+
+/* Делаем кнопку по размеру */
+
+body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .add_to_cart .buttons_added.quantity, body.theme_11 .wrapper .page-section .products.grid .product-item .thumbnail .price_actions .more_details_btn_wrapper .buttons_added.quantity {
+  border-radius: 4px;
+  height: 42px;
+}
