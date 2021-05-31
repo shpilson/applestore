@@ -116,6 +116,7 @@ function inputCustom() {
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
+        removeButton();
     }
 
 
