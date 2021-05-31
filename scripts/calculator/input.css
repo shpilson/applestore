@@ -107,4 +107,9 @@ body .btn.btn-theme {
     width: 100%;
 }
 
+/* Скрыть "Удалить" при оформлении заказа */
 
+.checkout_form #cart_table .order_list_section .order_list_section__product-list .product_tr .single-price>a, .checkout_form #cart_table .order_list_section .order_list_section__product-list .product_tr .single-price>div a {
+    display: none;
+    justify-content: flex-end;
+}
