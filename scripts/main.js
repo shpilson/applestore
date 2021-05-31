@@ -16,7 +16,8 @@ import repeatModal from './myModal/checkout/modalActivate.js'; // Активир
  import inputCustom from './calculator/input.js'; // Поле для ввода кг
  import setProductParam from './calculator/setProductParam.js'; // Подгрузка содержимого корзины
 
- import checkoutChange from './calculator/checkout.js'; 
+ import checkoutChange from './calculator/checkout.js'; // Изменения при оформлении заказа
+ import changeButton from './calculator/main.js'; // Изменение поведения кнопки на главной после добавления в корзину
 
 if (pages.main) {
     advantage();
@@ -26,6 +27,7 @@ if (pages.main) {
     myModal();
     repeatMainModal();
     setProductParam();
+    changeButton();
   }
 
   if (pages.product) {
