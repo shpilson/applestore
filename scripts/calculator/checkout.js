@@ -3,8 +3,7 @@ import inputCustom from './input.js'; // подгружаем основной �
 function checkoutChange() {
     const product = JSON.parse(localStorage.getItem('product'));
     const itemPriceSelector = document.querySelector('.text-right');
-    const newPrice = itemPriceSelector.textContent;
-    console.log(newPrice);
+    console.log(itemPriceSelector.textContent);
 }
 
 export default checkoutChange;
