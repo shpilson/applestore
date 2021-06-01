@@ -111,6 +111,13 @@ function inputCustom() {
     }   
     }
 
+    // Создаем массив с товарами
+
+    const allProducts = (item) => {
+    allProducts.push(item);
+    console.log(allProducts);
+    }
+
     // Создаем продукт в localStorage
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
@@ -125,15 +132,13 @@ function inputCustom() {
 
       localStorage.setItem('product', JSON.stringify(product));
       
+      allProducts(product);
+
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
       removeButton();
     }
-
-    const allProducts = [''];
-    allProducts.push(obj.product);
-    console.log(allProducts);
 
     const buyButton = document.querySelector('.buttons .btn-cart');
     buyButton.onclick = function () {
