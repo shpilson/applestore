@@ -114,7 +114,7 @@ function inputCustom() {
     // Создаем массив с товарами
 
     const addToListOfProducts = (item) => {
-    allProducts = [''];
+    const allProducts = [''];
     allProducts.push(item);
     console.log(allProducts);
     }
