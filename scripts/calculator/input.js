@@ -131,6 +131,10 @@ function inputCustom() {
       removeButton();
     }
 
+    const allProducts = [''];
+    allProducts.push(localStorage.getItem('product'));
+    console.log(allProducts);
+
     const buyButton = document.querySelector('.buttons .btn-cart');
     buyButton.onclick = function () {
       setTimeout(() => {
