@@ -79,7 +79,7 @@ function inputCustom() {
                     </div>
                     <div class="product_details pr-2 pl-2">
                         <h4 class="media-heading item-title">
-                        <a href="https://store107721.sellavi.com/наушники-airpods-pro/">new item</a></h4>
+                        <a href="https://store107721.sellavi.com/наушники-airpods-pro/">${product.productTitle}</a></h4>
                             <ul class="item-desc mt-1"></ul>
                                 <p class="item-price mt-3">цена</p>
                                 <p class="item-qty mt-3">вес</p>
