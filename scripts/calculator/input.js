@@ -52,7 +52,6 @@ function inputCustom() {
     }
  
     const hasProdValue = (newValue) => {
-
       const product = JSON.parse(localStorage.getItem('product'));
       const input = +(+newValue).toFixed(2);
         if (product !== null) {
@@ -62,7 +61,15 @@ function inputCustom() {
       else {
           return input;
         }
+    }
 
+    const addNewItem = (newItem) => {
+        const product = JSON.parse(localStorage.getItem('product'));
+        if (product !== null) {
+            console.log("Хранилище не пустое")
+        } else {
+            console.log("В хранилище пусто")
+        }
     }
 
 
@@ -87,6 +94,7 @@ function inputCustom() {
       }
 
       hasProdValue(val);
+      addNewItem(product);
 
       localStorage.setItem('product', JSON.stringify(product));
       
