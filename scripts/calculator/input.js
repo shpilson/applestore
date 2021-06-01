@@ -117,7 +117,7 @@ function inputCustom() {
       const product = {
           summary: (val * priceNumber).toFixed(0),
           totalSummary: hasProdValue(val * priceNumber).toFixed(0),
-          val: hasProdValue(val), // val = number
+          val, // val = number
           productTitle: document.querySelector('.product-title').textContent
       }
 
