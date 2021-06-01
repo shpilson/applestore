@@ -93,7 +93,7 @@ function inputCustom() {
             </div>
                 `
             );
-        setProductParam();
+        // setProductParam();
         } else {
             console.log("В хранилище было пусто, ничего не делаем")
         }
