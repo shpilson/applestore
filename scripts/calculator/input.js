@@ -59,7 +59,7 @@ function inputCustom() {
             return +sumValue.toFixed(2);
         }
       else {
-          return product.val;
+          return input;
         }
     }
 
