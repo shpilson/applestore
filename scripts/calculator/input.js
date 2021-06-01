@@ -70,6 +70,7 @@ function inputCustom() {
             const firstItem = document.querySelector(".products_row .col-12 .media");
             firstItem.insertAdjacentHTML(
                 'afterend', `
+            <div class="media products-wrapper position-relative">
                 <div class="d-flex w-100">
                     <div class="product_thumb">
                         <a class="" href="https://store107721.sellavi.com/">
@@ -89,6 +90,7 @@ function inputCustom() {
                         </div>
                     </div>
                 </div>
+            </div>
                 `
             );
         } else {
