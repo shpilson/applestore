@@ -73,8 +73,8 @@ function inputCustom() {
             <div class="media products-wrapper position-relative">
                 <div class="d-flex w-100">
                     <div class="product_thumb">
-                        <a class="" href="https://store107721.sellavi.com/">
-                            <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1619721360/ru/clients/107721/168c1cb81af7d9e304ed3b12c79acaa56173064c.webp" alt="new item" title="new item" class="media-object item-image img-fluid">
+                        <a class="" href="https://store107721.sellavi.com/яблоки-на-снегу/">
+                        <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1622390675/ru/clients/107721/6ce38d64ba228460397fb0fd5e9a7c6aa5bd9c35.webp" alt="Яблоки на снегу" title="Яблоки на снегу" class="media-object item-image img-fluid">
                         </a>
                     </div>
                     <div class="product_details pr-2 pl-2">
