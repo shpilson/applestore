@@ -42,7 +42,7 @@ function inputCustom() {
           'У Вас в корзине уже: ' + param.val + ' кг';
           
         document.getElementById('test2').innerHTML =
-          'На сумму: ' + param.totalSummary + ' руб';
+          'На сумму: ' + param.summary + ' руб';
     
         const price = document.querySelector('.product-price');
         price.textContent = priceContent + ' / кг';
@@ -115,8 +115,7 @@ function inputCustom() {
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
       const product = {
-          summary: (val * priceNumber).toFixed(0),
-          totalSummary: hasProdValue(val * priceNumber).toFixed(0),
+          summary: hasProdValue(val * priceNumber).toFixed(0),
           val: hasProdValue(val),
           productTitle: document.querySelector('.product-title').textContent
       }
