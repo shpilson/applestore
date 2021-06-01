@@ -145,6 +145,7 @@ function inputCustom() {
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
+        addToListOfProducts();
       }, 1000)
     };
 
