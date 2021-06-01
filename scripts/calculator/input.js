@@ -115,7 +115,7 @@ function inputCustom() {
 
     const addToListOfProducts = (item) => {
     const allProducts = [''];
-    allProducts.push(item);
+    allProducts.push(item.productTitle);
     console.log(allProducts);
     }
 
