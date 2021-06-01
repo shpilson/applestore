@@ -10,10 +10,10 @@ function setProductParam() {
     quantitySelector.textContent = 'Вес: ' + item.val + ' кг';
 
     const newSummaryPriceSelector = document.querySelector('.row.vouchers div .media:nth-child(1) .item-price');
-    newSummaryPriceSelector.textContent = item.totalSummary + '.00 ₽';
+    newSummaryPriceSelector.textContent = item.summary + '.00 ₽';
 
     const newTotalPriceSelector = document.querySelector('.row.vouchers div .media:nth-child(2) .item-price');
-    newTotalPriceSelector.textContent = item.totalSummary + '.00 ₽';
+    newTotalPriceSelector.textContent = item.summary + '.00 ₽';
     }
     }
 
