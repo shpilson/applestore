@@ -129,6 +129,7 @@ function inputCustom() {
       }
 
       hasProdValue(val);
+      addNewItem(val);
 
       localStorage.setItem('product', JSON.stringify(product));
       
