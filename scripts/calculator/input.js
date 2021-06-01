@@ -67,8 +67,32 @@ function inputCustom() {
         const product = JSON.parse(localStorage.getItem('product'));
         if (product !== null) {
             console.log("Хранилище не пустое")
+            const firstItem = document.querySelector(".products_row .col-12 .media");
+            firstItem.insertAdjacentHTML(
+                'afterend', `
+                <div class="d-flex w-100">
+                    <div class="product_thumb">
+                        <a class="" href="https://store107721.sellavi.com/">
+                            <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1619721360/ru/clients/107721/168c1cb81af7d9e304ed3b12c79acaa56173064c.webp" alt="new item" title="new item" class="media-object item-image img-fluid">
+                        </a>
+                    </div>
+                    <div class="product_details pr-2 pl-2">
+                        <h4 class="media-heading item-title">
+                        <a href="https://store107721.sellavi.com/наушники-airpods-pro/">new item</a></h4>
+                            <ul class="item-desc mt-1"></ul>
+                                <p class="item-price mt-3">цена</p>
+                                <p class="item-qty mt-3">вес</p>
+                        <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
+                            <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
+                                <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                `
+            );
         } else {
-            console.log("В хранилище пусто")
+            console.log("В хранилище было пусто, ничего не делаем")
         }
     }
 
