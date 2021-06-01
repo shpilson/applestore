@@ -132,7 +132,7 @@ function inputCustom() {
     }
 
     const allProducts = [''];
-    allProducts.push(product);
+    allProducts.push(obj.product);
     console.log(allProducts);
 
     const buyButton = document.querySelector('.buttons .btn-cart');
