@@ -129,11 +129,10 @@ function inputCustom() {
       }
 
       hasProdValue(val);
-      addToListOfProducts(product);
 
       localStorage.setItem('product', JSON.stringify(product));
       
-      allProducts(product);
+      addToListOfProducts(product);
 
       openCartWrapper();
       setProductParam();
