@@ -158,14 +158,12 @@ function inputCustom() {
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
-        addToListOfProducts();
       }, 1000)
     };
 
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
-        addToListOfProducts();
         removeButton();
     }
 
