@@ -159,4 +159,3 @@ function inputCustom() {
   export default inputCustom;
   
 
-  //
