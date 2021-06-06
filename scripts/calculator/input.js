@@ -147,8 +147,6 @@ function inputCustom() {
       setCartData(product)
       /* localStorage.setItem('product', JSON.stringify(product)); */
 
-      addToListOfProducts(product);
-
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
@@ -159,6 +157,7 @@ function inputCustom() {
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
+        addToListOfProducts(product);
       }, 1000)
     };
 
