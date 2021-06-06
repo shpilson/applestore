@@ -113,7 +113,6 @@ function inputCustom() {
 
 
     // Получаем данные из LocalStorage
-
     function getCartData(){
         return JSON.parse(localStorage.getItem('product'));
       }
@@ -127,9 +126,9 @@ function inputCustom() {
 
     // Создаем массив с товарами
     const addToListOfProducts = (item) => {
-        const allProducts = [getCartData()];
+        const allProducts = [];
         allProducts.push(item);
-        console.log(allProducts);
+        console.log(getCartData());
         }
 
     // Создаем продукт в localStorage
