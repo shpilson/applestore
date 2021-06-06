@@ -144,8 +144,9 @@ function inputCustom() {
       hasProdValue(val);
       addNewItem(val);
 
-      setCartData(product)
+      setCartData(product);
       /* localStorage.setItem('product', JSON.stringify(product)); */
+      addToListOfProducts(product);
 
       openCartWrapper();
       setProductParam();
