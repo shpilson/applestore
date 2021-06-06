@@ -112,7 +112,6 @@ function inputCustom() {
     }
 
     // Создаем массив с товарами
-
     const addToListOfProducts = (item) => {
     const allProducts = [];
     allProducts.push(item);
@@ -128,12 +127,11 @@ function inputCustom() {
           productTitle: document.querySelector('.product-title').textContent
       }
 
+      addToListOfProducts(product);
       hasProdValue(val);
       addNewItem(val);
 
       localStorage.setItem('product', JSON.stringify(product));
-      
-      addToListOfProducts(product);
 
       openCartWrapper();
       setProductParam();
