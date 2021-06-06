@@ -129,8 +129,8 @@ function inputCustom() {
     const addToListOfProducts = (item) => {
         const allProducts = [];
         allProducts.push(item);
-        console.log("Выводим getCartData: " + getCartData);
-        console.log("Выводим содержимое allProducts: " + allProducts);
+        console.log(getCartData);
+        console.log(allProducts);
         }
 
     // Создаем продукт в localStorage
