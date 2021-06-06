@@ -111,12 +111,27 @@ function inputCustom() {
     }   
     }
 
+
+    // Получаем данные из LocalStorage
+
+    function getCartData(){
+        return JSON.parse(localStorage.getItem('product'));
+      }
+
+    // Записываем данные в LocalStorage
+    function setCartData(o){
+        localStorage.setItem('product', JSON.stringify(o));
+    return false;
+    }      
+
+
     // Создаем массив с товарами
     const addToListOfProducts = (item) => {
-    const allProducts = [];
-    allProducts.push(item);
-    console.log(allProducts);
-    }
+        const allProducts = [];
+        allProducts.push(item);
+        console.log("Выводим getCartData: " + getCartData);
+        console.log("Выводим содержимое allProducts: " + allProducts);
+        }
 
     // Создаем продукт в localStorage
     const createNewProduct = () => {
@@ -130,7 +145,8 @@ function inputCustom() {
       hasProdValue(val);
       addNewItem(val);
 
-      localStorage.setItem('product', JSON.stringify(product));
+      setCartData(product)
+      /* localStorage.setItem('product', JSON.stringify(product)); */
 
       addToListOfProducts(product);
 
