@@ -1,5 +1,4 @@
 import setProductParam from './setProductParam.js'; // подгружаем информацию в попап-корзины
-
 function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
@@ -62,7 +61,6 @@ function inputCustom() {
           return input;
         }
     }
-
     const addNewItem = (newItem) => {
         const product = JSON.parse(localStorage.getItem('product'));
         if (product !== null) {
@@ -98,8 +96,6 @@ function inputCustom() {
             console.log("В хранилище было пусто, ничего не делаем")
         }
     }
-
-
     const removeButton = () => { 
     const remButton = document.querySelector('.remove-button-wrapper');
     if (localStorage.getItem('product') !== null) {
@@ -108,29 +104,25 @@ function inputCustom() {
         document.getElementById('test').style.display = 'none';
         document.getElementById('test2').style.display = 'none';
         }  
-      }   
+    }   
     }
-
-
     // Получаем данные из LocalStorage
     function getCartData(){
         return JSON.parse(localStorage.getItem('product'));
       }
-
     // Записываем данные в LocalStorage
     function setCartData(o){
         localStorage.setItem('product', JSON.stringify(o));
     return false;
     }      
 
-
     // Создаем массив с товарами
     const addToListOfProducts = (item) => {
+        const allProducts = [getCartData];
         const allProducts = [getCartData()];
         allProducts.push(item);
         console.log(allProducts);
         }
-
     // Создаем продукт в localStorage
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
@@ -139,36 +131,29 @@ function inputCustom() {
           val: hasProdValue(val),
           productTitle: document.querySelector('.product-title').textContent
       }
-
       hasProdValue(val);
       addNewItem(val);
-
-      setCartData(product);
+      setCartData(product)
       /* localStorage.setItem('product', JSON.stringify(product)); */
       addToListOfProducts(product);
-
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
       removeButton();
     }
-
     const buyButton = document.querySelector('.buttons .btn-cart');
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
       }, 1000)
     };
-
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
+        addToListOfProducts();
         removeButton();
     }
-
-
   }
   
   export default inputCustom;
   
-
