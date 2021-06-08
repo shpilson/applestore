@@ -2,68 +2,70 @@ import setProductParam from './setProductParam.js'; // подгружаем ин
 function inputCustom() {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
-      'afterbegin',
-      `<div class="quantity_new">
+        'afterbegin',
+        `<div class="quantity_new">
               <input type="number" class="quantity_field form-control" name="quantity" placeholder="0.1" step="0.1" id="quantity">
           </div>`
     );
-  
+
     const summarySelector = document.querySelector('.product-availability');
     summarySelector.insertAdjacentHTML(
-      'afterend',
-      `
+        'afterend',
+        `
           <div class="product-availability">
               <div id="test"></div>
               <div id="test2"></div>
           </div>`
     );
-  
+
     const priceSelector = document.querySelector('.product-price');
     let priceContent = priceSelector.textContent;
     let priceSplit = priceContent.split('.');
     let priceCut = priceSplit[0];
     let priceJoin = priceCut.split(' ').join('');
     const priceNumber = Number(priceJoin);
-      
+
     // Открываем содержимое поп-ап корзины
     const openCartWrapper = () => {
         const dropdownSelector = document.querySelector('.dropdown');
-              dropdownSelector.classList.add('show');
-  
+        dropdownSelector.classList.add('show');
+
         const dropdownSelector2 = document.querySelector('.dropdown-menu');
         dropdownSelector2.classList.add('show');
     }
- 
+
     // Выводим для пользователя подсчеты на странице продукта
     const calcNewValue = (param) => {
         if (param) {
-        document.getElementById('test').innerHTML =
-          'У Вас в корзине уже: ' + param.val + ' кг';
-          
-        document.getElementById('test2').innerHTML =
-          'На сумму: ' + param.summary + ' руб';
-    
-        const price = document.querySelector('.product-price');
-        price.textContent = priceContent + ' / кг';
+            document.getElementById('test').innerHTML =
+                'У Вас в корзине уже: ' + param.val + ' кг';
+
+            document.getElementById('test2').innerHTML =
+                'На сумму: ' + param.summary + ' руб';
+
+            const price = document.querySelector('.product-price');
+            price.textContent = priceContent + ' / кг';
         } else {
-          console.log('Весовой товар неопределён')
+            console.log('Весовой товар неопределён')
         }
     }
- 
-    const hasProdValue = (new_val) => {
-      const product = JSON.parse(localStorage.getItem('product'));
-      const input = +(+new_val).toFixed(2);
-        if (product !== null) {
-            const sumValue = input + +product.val;
-            return +sumValue.toFixed(2);
-        }
-      else {
-          return input;
-        }
-    }
+
+    // const hasProdValue = (new_val) => {
+    //     const product = JSON.parse(localStorage.getItem('product'));
+    //     const input = +(+new_val).toFixed(2);
+    //     if (product !== null) {
+    //         const sumValue = input + +product.val;
+    //         return +sumValue.toFixed(2);
+    //     }
+    //     else {
+    //         return input;
+    //     }
+    // }
+    const products = [];
+
     const addNewItem = (newItem) => {
         const product = JSON.parse(localStorage.getItem('product'));
-        if (product !== null) {
+        if (products) {
             console.log("Хранилище не пустое")
             const firstItem = document.querySelector(".products_row .col-12 .media");
             firstItem.insertAdjacentHTML(
@@ -86,41 +88,43 @@ function inputCustom() {
                                 <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
                             </a>
                         </div>
-                    </div>
+
+</div>
                 </div>
             </div>
                 `
             );
-        // setProductParam();
+            // setProductParam();
         } else {
             console.log("В хранилище было пусто, ничего не делаем")
         }
     }
-    const removeButton = () => { 
-    const remButton = document.querySelector('.remove-button-wrapper');
-    if (localStorage.getItem('product') !== null) {
-        remButton.onclick = function() {
-        localStorage.removeItem('product');
-        document.getElementById('test').style.display = 'none';
-        document.getElementById('test2').style.display = 'none';
-        }  
-    }   
+    const removeButton = () => {
+        const remButton = document.querySelector('.remove-button-wrapper');
+        if (localStorage.getItem('product') !== null) {
+            remButton.onclick = function () {
+                localStorage.removeItem('product');
+                document.getElementById('test').style.display = 'none';
+                document.getElementById('test2').style.display = 'none';
+            }
+        }
     }
     // Получаем данные из LocalStorage
-    function getCartData(){
+    function getCartData() {
         return JSON.parse(localStorage.getItem('product'));
-      }
+    }
     // Записываем данные в LocalStorage
-    function setCartData(o){
+    function setCartData(o) {
         localStorage.setItem('product', JSON.stringify(o));
     return false;
     }      
     // Создаем массив с товарами
-    const addToListOfProducts = (item) => {
-        const allProducts = [getCartData()];
-        allProducts.push(item);
-        console.log(allProducts);
-        }
+    // const addToListOfProducts = (item) => {
+    //     const allProducts = [getCartData()];
+    //     allProducts.push(item);
+    //     console.log(allProducts);
+    // }
+
     // Создаем продукт в localStorage
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
@@ -129,6 +133,8 @@ function inputCustom() {
           val: hasProdValue(val),
           productTitle: document.querySelector('.product-title').textContent
       }
+      products.push(product);
+
       hasProdValue(val);
       addNewItem(val);
       setCartData(product)
@@ -147,7 +153,7 @@ function inputCustom() {
     };
 
     if (localStorage.getItem('product')) {
-        calcNewValue(JSON.parse(localStorage.getItem('product')));
+        calcNewValue();
         setProductParam();
         addToListOfProducts();
         removeButton();
