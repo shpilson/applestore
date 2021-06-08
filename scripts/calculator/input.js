@@ -130,8 +130,8 @@ function inputCustom() {
     const createNewProduct = () => {
       const val = document.getElementById('quantity').value;
       const product = {
-          summary: (hasProdValue(val) * priceNumber).toFixed(0),
-          val: hasProdValue(val),
+          summary: priceNumber,
+          val: val,
           productTitle: document.querySelector('.product-title').textContent
       }
       products.push(product);
