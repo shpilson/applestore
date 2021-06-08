@@ -1,5 +1,47 @@
-import setProductParam from './setProductParam.js'; // подгружаем информацию в попап-корзины
+    // import setProductParam from './setProductParam.js'; // подгружаем информацию в попап-корзины
 
+
+
+    const addNewItem = () => {
+        const product = JSON.parse(localStorage.getItem('product'));
+        const itemContainer = document.querySelector(".products_row .col-12");
+
+        if (products && itemContainer) {
+            product.forEach(el => {
+            itemContainer.insertAdjacentHTML(
+                'beforeend', `
+            <div class="media products-wrapper position-relative">
+                <div class="d-flex w-100">
+                    <div class="product_thumb">
+                        <a class="" href="https://store107721.sellavi.com/#">
+                        <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1622390675/ru/clients/107721/6ce38d64ba228460397fb0fd5e9a7c6aa5bd9c35.webp" alt="Яблоки на снегу" title="Яблоки на снегу" class="media-object item-image img-fluid">
+                        </a>
+                    </div>
+                    <div class="product_details pr-2 pl-2">
+                        <h4 class="media-heading item-title">
+                        <a href="https://store107721.sellavi.com/#">${el.productTitle}</a></h4>
+                            <ul class="item-desc mt-1"></ul>
+                                <p class="item-price mt-3">${el.summary}.00 ₽</p>
+                                <p class="item-qty mt-3">Вес: ${el.val} кг</p>
+                        <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
+                            <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
+                                <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+
+</div>
+                </div>
+            </div>
+                `
+            );
+        })
+            // setProductParam();
+        } else {
+            console.log("В хранилище было пусто, ничего не делаем")
+        }
+    }
+
+    if (document.querySelector('.product-product')) {
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
         'afterbegin',
@@ -63,48 +105,6 @@ import setProductParam from './setProductParam.js'; // подгружаем ин
     }
     const products = [];
 
-    const addNewItem = () => {
-        const product = JSON.parse(localStorage.getItem('product'));
-        const itemContainer = document.querySelector(".products_row .col-12");
-
-        if (products && itemContainer) {
-            console.log("Хранилище не пустое")
-            console.log(product)
-
-            product.forEach(el => {
-                console.log(el)
-            itemContainer.insertAdjacentHTML(
-                'beforeend', `
-            <div class="media products-wrapper position-relative">
-                <div class="d-flex w-100">
-                    <div class="product_thumb">
-                        <a class="" href="https://store107721.sellavi.com/#">
-                        <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1622390675/ru/clients/107721/6ce38d64ba228460397fb0fd5e9a7c6aa5bd9c35.webp" alt="Яблоки на снегу" title="Яблоки на снегу" class="media-object item-image img-fluid">
-                        </a>
-                    </div>
-                    <div class="product_details pr-2 pl-2">
-                        <h4 class="media-heading item-title">
-                        <a href="https://store107721.sellavi.com/#">${el.productTitle}</a></h4>
-                            <ul class="item-desc mt-1"></ul>
-                                <p class="item-price mt-3">${el.summary}.00 ₽</p>
-                                <p class="item-qty mt-3">Вес: ${el.val} кг</p>
-                        <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
-                            <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
-                                <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
-                            </a>
-                        </div>
-
-</div>
-                </div>
-            </div>
-                `
-            );
-        })
-            // setProductParam();
-        } else {
-            console.log("В хранилище было пусто, ничего не делаем")
-        }
-    }
     const removeButton = () => {
         // const remButton = document.querySelector('.remove-button-wrapper');
         // if (localStorage.getItem('product') !== null) {
@@ -157,15 +157,18 @@ import setProductParam from './setProductParam.js'; // подгружаем ин
         // addToListOfProducts();
       }, 1000)
     };
+}
 
-    if (JSON.parse(localStorage.getItem('product'))) {
-        // calcNewValue();
-        // setProductParam();
-        // addToListOfProducts();
-        // removeButton();
-        addNewItem();
-    }
-  
+
+if (JSON.parse(localStorage.getItem('product'))) {
+    // calcNewValue();
+    // setProductParam();
+    // addToListOfProducts();
+    // removeButton();
+    addNewItem();
+}
+
+
   export {
       addNewItem
 };
