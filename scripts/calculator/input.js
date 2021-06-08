@@ -108,7 +108,7 @@ function inputCustom() {
         document.getElementById('test').style.display = 'none';
         document.getElementById('test2').style.display = 'none';
         }  
-    }   
+      }   
     }
 
 
