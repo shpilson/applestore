@@ -50,17 +50,17 @@ function inputCustom() {
         }
     }
 
-    // const hasProdValue = (new_val) => {
-    //     const product = JSON.parse(localStorage.getItem('product'));
-    //     const input = +(+new_val).toFixed(2);
-    //     if (product !== null) {
-    //         const sumValue = input + +product.val;
-    //         return +sumValue.toFixed(2);
-    //     }
-    //     else {
-    //         return input;
-    //     }
-    // }
+    const hasProdValue = (new_val) => {
+        const product = JSON.parse(localStorage.getItem('product'));
+        const input = +(+new_val).toFixed(2);
+        if (product !== null) {
+            const sumValue = input + +product.val;
+            return +sumValue.toFixed(2);
+        }
+        else {
+            return input;
+        }
+    }
     const products = [];
 
     const addNewItem = (newItem) => {
@@ -148,14 +148,14 @@ function inputCustom() {
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
-        addToListOfProducts();
+        // addToListOfProducts();
       }, 1000)
     };
 
     if (localStorage.getItem('product')) {
         calcNewValue();
         setProductParam();
-        addToListOfProducts();
+        // addToListOfProducts();
         removeButton();
     }
   }
