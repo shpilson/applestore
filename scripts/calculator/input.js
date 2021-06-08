@@ -71,6 +71,7 @@ function inputCustom() {
 
             const firstItem = document.querySelector(".products_row .col-12");
             product.forEach(el => {
+                console.log(el)
             firstItem.insertAdjacentHTML(
                 'beforeend', `
             <div class="media products-wrapper position-relative">
@@ -82,9 +83,9 @@ function inputCustom() {
                     </div>
                     <div class="product_details pr-2 pl-2">
                         <h4 class="media-heading item-title">
-                        <a href="https://store107721.sellavi.com/#">${product.productTitle}</a></h4>
+                        <a href="https://store107721.sellavi.com/#">${el.productTitle}</a></h4>
                             <ul class="item-desc mt-1"></ul>
-                                <p class="item-price mt-3">${product.summary}.00 ₽</p>
+                                <p class="item-price mt-3">${el.summary}.00 ₽</p>
                                 <p class="item-qty mt-3">Вес: ${product.val} кг</p>
                         <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
                             <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
