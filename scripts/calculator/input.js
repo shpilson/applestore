@@ -67,6 +67,7 @@ function inputCustom() {
         const product = JSON.parse(localStorage.getItem('product'));
         if (products) {
             console.log("Хранилище не пустое")
+            console.log(products)
             const firstItem = document.querySelector(".products_row .col-12 .media");
             firstItem.insertAdjacentHTML(
                 'afterend', `
