@@ -100,14 +100,14 @@ function inputCustom() {
         }
     }
     const removeButton = () => {
-        const remButton = document.querySelector('.remove-button-wrapper');
-        if (localStorage.getItem('product') !== null) {
-            remButton.onclick = function () {
-                localStorage.removeItem('product');
-                document.getElementById('test').style.display = 'none';
-                document.getElementById('test2').style.display = 'none';
-            }
-        }
+        // const remButton = document.querySelector('.remove-button-wrapper');
+        // if (localStorage.getItem('product') !== null) {
+        //     remButton.onclick = function () {
+        //         localStorage.removeItem('product');
+        //         document.getElementById('test').style.display = 'none';
+        //         document.getElementById('test2').style.display = 'none';
+        //     }
+        // }
     }
     // Получаем данные из LocalStorage
     function getCartData() {
