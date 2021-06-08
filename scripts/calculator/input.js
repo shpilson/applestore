@@ -128,7 +128,6 @@ function inputCustom() {
     const addToListOfProducts = (item) => {
         const allProducts = [getCartData()];
         allProducts.push(item);
-        setCartData();
         console.log(allProducts);
         }
 
