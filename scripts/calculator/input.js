@@ -68,9 +68,11 @@ function inputCustom() {
         if (products) {
             console.log("Хранилище не пустое")
             console.log(products)
-            const firstItem = document.querySelector(".products_row .col-12 .media");
+
+            const firstItem = document.querySelector(".products_row .col-12");
+            products.forEach(el => {
             firstItem.insertAdjacentHTML(
-                'afterend', `
+                'beforeend', `
             <div class="media products-wrapper position-relative">
                 <div class="d-flex w-100">
                     <div class="product_thumb">
@@ -95,6 +97,7 @@ function inputCustom() {
             </div>
                 `
             );
+        })
             // setProductParam();
         } else {
             console.log("В хранилище было пусто, ничего не делаем")
@@ -136,9 +139,9 @@ function inputCustom() {
       }
       products.push(product);
 
-      hasProdValue(val);
+    //   hasProdValue(val);
       addNewItem(val);
-      setCartData(product)
+      setCartData(products)
       /* localStorage.setItem('product', JSON.stringify(product)); */
       openCartWrapper();
       setProductParam();
