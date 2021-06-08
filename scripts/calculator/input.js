@@ -86,7 +86,7 @@ function inputCustom() {
                         <a href="https://store107721.sellavi.com/#">${el.productTitle}</a></h4>
                             <ul class="item-desc mt-1"></ul>
                                 <p class="item-price mt-3">${el.summary}.00 ₽</p>
-                                <p class="item-qty mt-3">Вес: ${product.val} кг</p>
+                                <p class="item-qty mt-3">Вес: ${el.val} кг</p>
                         <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
                             <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
                                 <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
