@@ -115,7 +115,6 @@ function inputCustom() {
         localStorage.setItem('product', JSON.stringify(o));
     return false;
     }      
-
     // Создаем массив с товарами
     const addToListOfProducts = (item) => {
         const allProducts = [getCartData()];
@@ -134,7 +133,6 @@ function inputCustom() {
       addNewItem(val);
       setCartData(product)
       /* localStorage.setItem('product', JSON.stringify(product)); */
-      addToListOfProducts(product);
       openCartWrapper();
       setProductParam();
       calcNewValue(product);
@@ -144,8 +142,10 @@ function inputCustom() {
     buyButton.onclick = function () {
       setTimeout(() => {
         createNewProduct()
+        addToListOfProducts();
       }, 1000)
     };
+
     if (localStorage.getItem('product')) {
         calcNewValue(JSON.parse(localStorage.getItem('product')));
         setProductParam();
@@ -155,4 +155,3 @@ function inputCustom() {
   }
   
   export default inputCustom;
-  
