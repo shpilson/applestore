@@ -63,14 +63,14 @@ function inputCustom() {
     }
     const products = [];
 
-    const addNewItem = (newItem) => {
+    const addNewItem = () => {
         const product = JSON.parse(localStorage.getItem('product'));
         if (products) {
             console.log("Хранилище не пустое")
-            console.log(products)
+            console.log(product)
 
             const firstItem = document.querySelector(".products_row .col-12");
-            products.forEach(el => {
+            product.forEach(el => {
             firstItem.insertAdjacentHTML(
                 'beforeend', `
             <div class="media products-wrapper position-relative">
@@ -120,7 +120,6 @@ function inputCustom() {
     // Записываем данные в LocalStorage
     function setCartData(o) {
         localStorage.setItem('product', JSON.stringify(o));
-    return false;
     }      
     // Создаем массив с товарами
     // const addToListOfProducts = (item) => {
@@ -140,11 +139,11 @@ function inputCustom() {
       products.push(product);
 
     //   hasProdValue(val);
-      addNewItem(val);
-      setCartData(products)
+        setProductParam();
+        setCartData(products)
       /* localStorage.setItem('product', JSON.stringify(product)); */
       openCartWrapper();
-      setProductParam();
+      addNewItem(val);
       calcNewValue(product);
       removeButton();
     }
