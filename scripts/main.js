@@ -29,11 +29,11 @@ if (pages.main) {
     changeButton();
   }
 
-  // if (pages.product) {
+  if (!pages.product) {
   //  myModalProduct();
 //    priceNumber;
     addNewItem();
-  // }
+  }
 
   if (pages.checkout) {
     checkoutChange();

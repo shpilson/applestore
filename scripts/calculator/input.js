@@ -37,7 +37,6 @@
         if (products && itemContainer) {
             product.forEach(el => {
                 setRowItem({el, itemContainer})
-                
             })
             // setProductParam();
         } else {
