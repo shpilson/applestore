@@ -1,6 +1,34 @@
     // import setProductParam from './setProductParam.js'; // подгружаем информацию в попап-корзины
 
 
+    const setRowItem = ({el, itemContainer}) => {
+        itemContainer.insertAdjacentHTML(
+            'beforeend', `
+        <div class="media products-wrapper position-relative">
+            <div class="d-flex w-100">
+                <div class="product_thumb">
+                    <a class="" href="https://store107721.sellavi.com/#">
+                    <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1622390675/ru/clients/107721/6ce38d64ba228460397fb0fd5e9a7c6aa5bd9c35.webp" alt="Яблоки на снегу" title="Яблоки на снегу" class="media-object item-image img-fluid">
+                    </a>
+                </div>
+                <div class="product_details pr-2 pl-2">
+                    <h4 class="media-heading item-title">
+                    <a href="https://store107721.sellavi.com/#">${el.productTitle}</a></h4>
+                        <ul class="item-desc mt-1"></ul>
+                            <p class="item-price mt-3">${el.summary}.00 ₽</p>
+                            <p class="item-qty mt-3">Вес: ${el.val} кг</p>
+                    <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
+                        <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
+                            <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
+                        </a>
+                    </div>
+
+</div>
+            </div>
+        </div>
+            `
+        );
+    }
 
     const addNewItem = () => {
         const product = JSON.parse(localStorage.getItem('product'));
@@ -8,33 +36,9 @@
 
         if (products && itemContainer) {
             product.forEach(el => {
-            itemContainer.insertAdjacentHTML(
-                'beforeend', `
-            <div class="media products-wrapper position-relative">
-                <div class="d-flex w-100">
-                    <div class="product_thumb">
-                        <a class="" href="https://store107721.sellavi.com/#">
-                        <img src="https://cdn.sellavi.com/image/upload/w_50,h_50,c_pad/v1622390675/ru/clients/107721/6ce38d64ba228460397fb0fd5e9a7c6aa5bd9c35.webp" alt="Яблоки на снегу" title="Яблоки на снегу" class="media-object item-image img-fluid">
-                        </a>
-                    </div>
-                    <div class="product_details pr-2 pl-2">
-                        <h4 class="media-heading item-title">
-                        <a href="https://store107721.sellavi.com/#">${el.productTitle}</a></h4>
-                            <ul class="item-desc mt-1"></ul>
-                                <p class="item-price mt-3">${el.summary}.00 ₽</p>
-                                <p class="item-qty mt-3">Вес: ${el.val} кг</p>
-                        <div class="remove-button-wrapper buttons-wrapper position-absolute left-0" data-product-id="166064">
-                            <a onclick="cart.remove('50389', '166064');" class="remove_from_cart d-block">
-                                <i data-toggle="tooltip" title="Удалить" data-placement="left" class="fal fa-trash-alt"></i>
-                            </a>
-                        </div>
-
-</div>
-                </div>
-            </div>
-                `
-            );
-        })
+                setRowItem({el, itemContainer})
+                
+            })
             // setProductParam();
         } else {
             console.log("В хранилище было пусто, ничего не делаем")
