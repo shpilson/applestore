@@ -65,14 +65,15 @@ function inputCustom() {
 
     const addNewItem = () => {
         const product = JSON.parse(localStorage.getItem('product'));
-        if (products) {
+        const itemContainer = document.querySelector(".products_row .col-12");
+
+        if (products && itemContainer) {
             console.log("Хранилище не пустое")
             console.log(product)
 
-            const firstItem = document.querySelector(".products_row .col-12");
             product.forEach(el => {
                 console.log(el)
-            firstItem.insertAdjacentHTML(
+            itemContainer.insertAdjacentHTML(
                 'beforeend', `
             <div class="media products-wrapper position-relative">
                 <div class="d-flex w-100">
@@ -134,7 +135,7 @@ function inputCustom() {
         
       const val = document.getElementById('quantity').value;
       const product = {
-          summary: priceNumber,
+          summary: priceNumber * val,
           val: val,
           productTitle: document.querySelector('.product-title').textContent
       }
