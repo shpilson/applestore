@@ -139,7 +139,7 @@ function inputCustom() {
       products.push(product);
 
     //   hasProdValue(val);
-        setProductParam();
+        // setProductParam();
         setCartData(products)
       /* localStorage.setItem('product', JSON.stringify(product)); */
       openCartWrapper();
