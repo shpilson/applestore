@@ -1,5 +1,5 @@
 import setProductParam from './setProductParam.js'; // подгружаем информацию в попап-корзины
-function inputCustom() {
+
     const inputSelector = document.querySelector('.buttons.d-flex.flex-wrap');
     inputSelector.insertAdjacentHTML(
         'afterbegin',
@@ -165,6 +165,7 @@ function inputCustom() {
         // removeButton();
         addNewItem();
     }
-  }
   
-  export default inputCustom;
+  export {
+      addNewItem
+};
