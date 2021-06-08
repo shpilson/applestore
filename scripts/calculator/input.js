@@ -131,6 +131,7 @@ function inputCustom() {
 
     // Создаем продукт в localStorage
     const createNewProduct = () => {
+        
       const val = document.getElementById('quantity').value;
       const product = {
           summary: priceNumber,
@@ -144,7 +145,7 @@ function inputCustom() {
         setCartData(products)
       /* localStorage.setItem('product', JSON.stringify(product)); */
       openCartWrapper();
-      addNewItem(val);
+      addNewItem();
       calcNewValue(product);
       removeButton();
     }
@@ -156,11 +157,12 @@ function inputCustom() {
       }, 1000)
     };
 
-    if (localStorage.getItem('product')) {
-        calcNewValue();
-        setProductParam();
+    if (JSON.parse(localStorage.getItem('product'))) {
+        // calcNewValue();
+        // setProductParam();
         // addToListOfProducts();
-        removeButton();
+        // removeButton();
+        addNewItem();
     }
   }
   
