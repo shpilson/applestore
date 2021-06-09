@@ -22,16 +22,16 @@ if (pages.main) {
     advantage();
     catalogue();
     apple_map();
- //   myModalActivate();
+    // myModalActivate();
     myModal();
     repeatMainModal();
-    setProductParam();
+    // setProductParam();
     changeButton();
   }
 
   if (!pages.product) {
   //  myModalProduct();
-//    priceNumber;
+  //  priceNumber;
     addNewItem();
   }
 
